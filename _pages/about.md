@@ -31,5 +31,5 @@ PD Dr. Philip Furley completed his degree in Sport Science and Psychology at Hei
 
 His academic work has received multiple awards—including 1st place in the TOYOTA Science Award as well as 1st place in the DOSB Science Award 2023 for the best sport science habilitation in Germany.
 
-From 2010 to 2017, he headed the "Cognition and Motivation" section and served as an elected member of the Institute Board. Since 2020, he has been a Senior Tenured Lecturer (Oberstudienrat im Hochschuldienst) and, since 2017, Vice Head of the Institute of Exercise Training and Sport Informatics.
+From 2010 to 2017, he headed the "Cognition and Motivation" section and served as an elected member of the Institute Board. Since 2020, he has been a Senior Tenured Lecturer and, since 2017, Vice Head of the Institute of Exercise Training and Sport Informatics.
 
