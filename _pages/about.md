@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: Philip Furley
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: "German Sport University Cologne | p.furley@dshs-koeln.de"
 
 profile:
   align: right
