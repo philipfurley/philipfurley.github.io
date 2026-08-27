@@ -2,7 +2,7 @@
 layout: about
 title: Philip Furley
 permalink: /
-subtitle: "German Sport University Cologne | p.furley@dshs-koeln.de"
+subtitle: "German Sport University Cologne"
 
 profile:
   align: right
@@ -23,6 +23,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+<a href="mailto:p.furley@dshs-koeln.de">p.furley@dshs-koeln.de</a>
 
 PD Dr. Philip Furley completed his degree in Sport Science and Psychology at Heidelberg University in 2008, which included a two-semester exchange program in the Master’s program Sport and Exercise Psychology at San Diego State University (2006–2007). In 2012, he earned his doctorate (summa cum laude) at the German Sport University Cologne under the supervision of Prof. Dr. Daniel Memmert. He successfully completed his habilitation there in 2021.
 
