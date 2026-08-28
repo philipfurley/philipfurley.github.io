@@ -1,13 +1,16 @@
 ---
 layout: about
-title: Philip Furley
+title: about
 permalink: /
-subtitle: "German Sport University Cologne"
+subtitle: <a href='#'>German Sport University Cologne</a>. Institute of Exercise Training and Sport Informatics.
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
+  more_info: >
+    <p>Am Sportpark Müngersdorf 6</p>
+    <p>50933 Köln, Germany</p>
   
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -25,11 +28,7 @@ latest_posts:
 ---
 <a href="mailto:p.furley@dshs-koeln.de">p.furley@dshs-koeln.de</a>
 
-PD Dr. Philip Furley completed his degree in Sport Science and Psychology at Heidelberg University in 2008, which included a two-semester exchange program in the Master’s program Sport and Exercise Psychology at San Diego State University (2006–2007). In 2012, he earned his doctorate (summa cum laude) at the German Sport University Cologne under the supervision of Prof. Dr. Daniel Memmert. He successfully completed his habilitation there in 2021.
+I am a professor (PD Dr.) at the German Sport University Cologne, where I serve as Deputy Head of the Institute of Exercise Training and Sport Informatics. My work has been recognized with the highest honor in German sport science—the DOSB Science Award—and is supported by major competitive grants, including funding from the German Research Foundation (DFG).
 
-
-His academic work has received multiple awards—including 1st place in the TOYOTA Science Award as well as 1st place in the DOSB Science Award 2023 for the best sport science habilitation in Germany.
-
-
-From 2010 to 2017, he headed the "Cognition and Motivation" section and served as an elected member of the Institute Board. Since 2020, he has been a Senior Tenured Lecturer and, since 2017, Vice Head of the Institute of Exercise Training and Sport Informatics.
+My research program advances our understanding of human emotion, nonverbal expressions, visual attention, and cognitive functioning under high pressure. A cornerstone of my work is the application of an in situ ethological approach within the rich, ecologically valid context of competitive sport. By taking psychological inquiry out of artificial laboratory environments and examining high-stakes athletic scenarios, my lab leverages sports as a naturalistic lens to decode fundamental principles of human psychology, affective processes, nonverbal communication, and executive functioning. Ultimately, this research seeks to bridge the gap between basic cognitive-affective science and real-world human performance, offering novel insights into how individuals adapt, communicate, and excel when stakes are high.
 
