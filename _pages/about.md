@@ -11,7 +11,6 @@ profile:
   more_info: >
     <p>Am Sportpark Müngersdorf 6</p>
     <p>50933 Köln, Germany</p>
-  
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
