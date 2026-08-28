@@ -10,15 +10,8 @@ nav_order: 2
 <!-- _pages/publications.md -->
 
 <!-- Bibsearch Feature -->
-
 {% include bib_search.liquid %}
 
 <div class="publications">
-
-<h2 class="category">Book Chapters</h2>
-{% bibliography -f papers -q "@incollection[*]" %}
-
-<h2 class="category">Journal Articles</h2>
-{% bibliography -f papers -q "@article[*]" %}
-
+  {% bibliography %}
 </div>
