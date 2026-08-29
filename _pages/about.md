@@ -10,9 +10,22 @@ profile:
   image_circular: false
   more_info: >
     <div class="sidebar-contact">
-      <p><i class="fa-solid fa-phone"></i> +49 221 4982-4310</p>
-      <p><i class="fa-solid fa-location-dot"></i> Am Sportpark Müngersdorf 6<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50933 Köln, Germany</p>
-      <p><i class="fa-solid fa-building-columns"></i> Institute of Exercise Training and Sport Informatics</p>
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:p.furley@dshs-koeln.de">p.furley@dshs-koeln.de</a>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>+49 221 4982-4310</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-building-columns"></i>
+        <span>Inst. of Exercise Training & Sport Informatics</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Am Sportpark Müngersdorf 6<br>50933 Köln, Germany</span>
+      </div>
     </div>
 
 selected_papers: false
@@ -20,22 +33,44 @@ social: true
 ---
 
 <style>
-/* Sidebar Contact Styling */
+/* Crisp & Refined Sidebar Contact Styling */
 .sidebar-contact {
-  font-size: 0.82rem;
-  line-height: 1.5;
-  color: var(--global-text-color-light, #555);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--global-text-color-light, #4a4a4a);
   margin-top: 1rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--global-divider-color, #e0e0e0);
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--global-divider-color, #e5e5e5);
 }
 
-.sidebar-contact p {
-  margin-bottom: 0.5rem !important;
+.sidebar-contact .contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.45rem;
+}
+
+.sidebar-contact .contact-item:last-child {
+  margin-bottom: 0;
 }
 
 .sidebar-contact i {
-  width: 18px;
+  width: 16px;
+  min-width: 16px;
+  margin-right: 8px;
+  margin-top: 2px;
+  color: var(--global-theme-color, #007bff);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.sidebar-contact a {
+  color: var(--global-text-color-light, #4a4a4a);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar-contact a:hover {
   color: var(--global-theme-color, #007bff);
 }
 
@@ -80,7 +115,7 @@ social: true
 </style>
 
 <div class="bio-lead">
-  <p>I am a senior lecturer and professor (PD Dr.) at the <strong>German Sport University Cologne</strong>, where I serve as Deputy Head of the <strong>Institute of Exercise Training and Sport Informatics</strong>. My work has been recognized with the highest honor in German sport science—the <strong>DOSB Science Award</strong>—and is supported by major competitive grants, including funding from the German Research Foundation (DFG).</p>
+  <p>I am a professor (PD Dr.) at the <strong>German Sport University Cologne</strong>, where I serve as Deputy Head of the <strong>Institute of Exercise Training and Sport Informatics</strong>. My work has been recognized with the highest honor in German sport science—the <strong>DOSB Science Award</strong>—and is supported by major competitive grants, including funding from the German Research Foundation (DFG).</p>
 </div>
 
 <!-- Highlight Cards -->
