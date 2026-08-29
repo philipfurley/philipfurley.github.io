@@ -9,6 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
+    <p>+49 221 4982-4310>
     <p>Am Sportpark Müngersdorf 6</p>
     <p>50933 Köln, Germany</p>
 
