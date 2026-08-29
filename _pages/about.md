@@ -2,38 +2,103 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>German Sport University Cologne</a>. Institute of Exercise Training and Sport Informatics.
+subtitle: <a href="https://www.dshs-koeln.de/">German Sport University Cologne</a> · Institute of Exercise Training and Sport Informatics
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>+49 221 4982-4310>
-    <p>Am Sportpark Müngersdorf 6</p>
-    <p>50933 Köln, Germany</p>
+    <div class="sidebar-contact">
+      <p><i class="fa-solid fa-phone"></i> +49 221 4982-4310</p>
+      <p><i class="fa-solid fa-location-dot"></i> Am Sportpark Müngersdorf 6<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50933 Köln, Germany</p>
+      <p><i class="fa-solid fa-building-columns"></i> Institute of Exercise Training and Sport Informatics</p>
+    </div>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
-
-announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+selected_papers: false
+social: true
 ---
-<a href="mailto:p.furley@dshs-koeln.de">p.furley@dshs-koeln.de</a>
 
-I am a professor (PD Dr.) at the German Sport University Cologne, where I serve as Deputy Head of the Institute of Exercise Training and Sport Informatics. My work has been recognized with the highest honor in German sport science—the DOSB Science Award—and is supported by major competitive grants, including funding from the German Research Foundation (DFG).
+<style>
+/* Sidebar Contact Styling */
+.sidebar-contact {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--global-text-color-light, #555);
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--global-divider-color, #e0e0e0);
+}
 
-My research program advances our understanding of human emotion, nonverbal expressions, visual attention, and cognitive functioning under high pressure. A cornerstone of my work is the application of an in situ ethological approach within the rich, ecologically valid context of competitive sport. By taking psychological inquiry out of artificial laboratory environments and examining high-stakes athletic scenarios, my lab leverages sports as a naturalistic lens to decode fundamental principles of human psychology, affective processes, nonverbal communication, and executive functioning. Ultimately, this research seeks to bridge the gap between basic cognitive-affective science and real-world human performance, offering novel insights into how individuals adapt, communicate, and excel when stakes are high.
+.sidebar-contact p {
+  margin-bottom: 0.5rem !important;
+}
 
-<!-- Selected papers section -->
-{% if page.selected_papers %}
-  <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
-  {% bibliography -f papers -q "@*[selected=true]" %}
-{% endif %}
+.sidebar-contact i {
+  width: 18px;
+  color: var(--global-theme-color, #007bff);
+}
+
+/* Feature Grid Cards */
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.highlight-card {
+  background: var(--global-card-bg, #fcfcfc);
+  border: 1px solid var(--global-divider-color, #e9ecef);
+  border-left: 3px solid var(--global-theme-color, #007bff);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.highlight-card h4 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--global-theme-color, #007bff);
+  margin-bottom: 0.4rem;
+}
+
+.highlight-card p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 0;
+  color: var(--global-text-color, #333);
+}
+
+.bio-lead {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--global-text-color, #222);
+}
+</style>
+
+<div class="bio-lead">
+  <p>I am a senior lecturer and professor (PD Dr.) at the <strong>German Sport University Cologne</strong>, where I serve as Deputy Head of the <strong>Institute of Exercise Training and Sport Informatics</strong>. My work has been recognized with the highest honor in German sport science—the <strong>DOSB Science Award</strong>—and is supported by major competitive grants, including funding from the German Research Foundation (DFG).</p>
+</div>
+
+<!-- Highlight Cards -->
+<div class="about-highlights">
+  <div class="highlight-card">
+    <h4><i class="fa-solid fa-user-graduate"></i> Academic Rank</h4>
+    <p>Privatdozent (PD Dr.) & Senior Lecturer</p>
+  </div>
+  <div class="highlight-card">
+    <h4><i class="fa-solid fa-trophy"></i> Recognition</h4>
+    <p>DOSB Science Award Winner</p>
+  </div>
+  <div class="highlight-card">
+    <h4><i class="fa-solid fa-flask"></i> Primary Funding</h4>
+    <p>German Research Foundation (DFG)</p>
+  </div>
+</div>
+
+<p>My research program advances our understanding of human emotion, nonverbal expressions, visual attention, and cognitive functioning under high pressure. A cornerstone of my work is the application of an <em>in situ</em> ethological approach within the rich, ecologically valid context of competitive sport.</p>
+
+<p>By taking psychological inquiry out of artificial laboratory environments and examining high-stakes athletic scenarios, my lab leverages sports as a naturalistic lens to decode fundamental principles of human psychology, affective processes, nonverbal communication, and executive functioning. Ultimately, this research seeks to bridge the gap between basic cognitive-affective science and real-world human performance, offering novel insights into how individuals adapt, communicate, and excel when stakes are high.</p>
