@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href="https://www.dshs-koeln.de/">German Sport University Cologne</a> · Institute of Exercise Training and Sport Informatics
+subtitle: German Sport University Cologne · Institute of Exercise Training and Sport Informatics
 
 profile:
   align: right
@@ -96,7 +96,7 @@ social: true
 </style>
 
 <script>
-/* Inject contact block under profile image on load */
+/* Inject contact block safely into the sidebar upon page render */
 document.addEventListener("DOMContentLoaded", function () {
   const profileMoreInfo = document.querySelector(".profile .more-info");
   if (profileMoreInfo) {
@@ -125,14 +125,14 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <div class="bio-lead">
-  <p>I am a professor (PD Dr.) at the <strong>German Sport University Cologne</strong>, where I serve as Deputy Head of the <strong>Institute of Exercise Training and Sport Informatics</strong>. My work has been recognized with the highest honor in German sport science—the <strong>DOSB Science Award</strong>—and is supported by major competitive grants, including funding from the German Research Foundation (DFG).</p>
+  <p>I am a senior lecturer and professor (PD Dr.) at the <strong>German Sport University Cologne</strong>, where I serve as Deputy Head of the <strong>Institute of Exercise Training and Sport Informatics</strong>. My work has been recognized with the highest honor in German sport science—the <strong>DOSB Science Award</strong>—and is supported by major competitive grants, including funding from the German Research Foundation (DFG).</p>
 </div>
 
 <!-- Highlight Cards -->
 <div class="about-highlights">
   <div class="highlight-card">
     <h4><i class="fa-solid fa-user-graduate"></i> Academic Rank</h4>
-    <p>Professor (PD Dr.)</p>
+    <p>Privatdozent (PD Dr.) & Senior Lecturer</p>
   </div>
   <div class="highlight-card">
     <h4><i class="fa-solid fa-trophy"></i> Recognition</h4>
