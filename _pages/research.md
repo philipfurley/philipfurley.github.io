@@ -73,11 +73,12 @@ nav_order: 2
   }
 }
 
-/* Typography and Bibliography overrides */
+/* Hide year headings on this page */
 .compact-research h2.bibliography {
   display: none !important;
 }
 
+/* Remove list numbering and margins on bibliography lists */
 .compact-research ol.bibliography {
   list-style-type: none !important;
   padding-left: 0 !important;
@@ -90,6 +91,11 @@ nav_order: 2
   font-size: 0.88rem !important;
   line-height: 1.35 !important;
   margin-bottom: 1rem !important;
+}
+
+/* Hide "Chapter" / Type Badges (.abbr) */
+.compact-research .abbr {
+  display: none !important;
 }
 
 /* Hide all buttons except PDF */
@@ -132,6 +138,7 @@ html {
 
     <section id="strand-1">
       <h3>1. Nonverbal Behavior, Emotion & Social Perception in Sport</h3>
+      <img src="{{ '/assets/img/nvbresearch.jpg' | relative_url }}" alt="Nonverbal Behavior in Sport" class="img-fluid rounded z-depth-1 mb-3">
       <p>This research strand investigates how human emotions and nonverbal signals are communicated, perceived, and utilized in high-pressure athletic environments. Utilizing thin-slice methodology, 3D pose analysis, and Facial Action Coding (FACS), this work explores how body language, facial expressions, and emotional displays influence expectancy of success, impression formation, and strategic interactions between opponents, teammates, and coaches.</p>
       <p>A key objective of this domain is to bridge basic social psychology and evolutionary theory with real-world application, demonstrating how nonverbal cues reveal underlying cognitive states (such as ego depletion or confidence) and directly shape athletic performance across sports like soccer, darts, basketball, and tennis.</p>
       {% bibliography --query @*[category=nonverbal]* %}
@@ -141,6 +148,7 @@ html {
 
     <section id="strand-2">
       <h3>2. Executive Functions, Attention & Cognitive Load</h3>
+      <img src="{{ '/assets/img/attentionresearch.jpg' | relative_url }}" alt="Executive Functions and Attention" class="img-fluid rounded z-depth-1 mb-3">
       <p>This research line explores the cognitive architecture underlying elite human movement and tactical decision-making. Focusing on working memory capacity, visual attention, inattentional blindness, and dual-process models, the goal is to unravel how athletes process complex environmental stimuli while maintaining self-control under fatigue and cognitive load.</p>
       <p>Additionally, this strand examines the boundaries of cognitive transfer and ego-depletion, critically evaluating how executive control mechanisms function in high-pressure performance contexts and driving rigorous methodological standards for assessing executive function across sport science.</p>
       {% bibliography --query @*[category=cognitive]* %}
@@ -150,6 +158,7 @@ html {
 
     <section id="strand-3">
       <h3>3. Sport Science, Match Analyses & Penalty Kicks</h3>
+      <img src="{{ '/assets/img/penaltyresearch.jpg' | relative_url }}" alt="Match Analysis and Penalty Kicks" class="img-fluid rounded z-depth-1 mb-3">
       <p>Focused on elite performance analysis, this research strand applies systematic video-notational methods, spatial analytics, and psychological profiling to understand decision-making under high stakes. Major areas of inquiry include the mechanical and psychological determinants of soccer penalty kicks, home advantage phenomena, and the objectivity of match analysis data used by elite coaching staff.</p>
       <p>By evaluating parameters such as visuomotor calibration, pressure, and perceptual strategies in sports like soccer, tennis, and darts, this work bridges match data analytics with actionable insights for talent development and opponent preparation.</p>
       {% bibliography --query @*[category=match_analysis]* %}
@@ -159,6 +168,7 @@ html {
 
     <section id="strand-4">
       <h3>4. Evolutionary Perspectives, Biocultural Models & Metascience</h3>
+      <img src="{{ '/assets/img/evolutionresearch.jpg' | relative_url }}" alt="Evolutionary Perspectives and Metascience" class="img-fluid rounded z-depth-1 mb-3">
       <p>This interdisciplinary line uses evolutionary behavioral science to understand modern athletic competition as a window into human nature, physical play, and competitive signaling. Topics range from biocultural frameworks of play to evolutionary hypotheses explaining home ground territoriality and relative age effects in talent identification.</p>
       <p>Parallel to evolutionary theory, this strand emphasizes metascience and Open Science practices within sport psychology—critically examining replication validity (e.g., color effects and aggression), statistical power, sample sizes, and the relative utility of systematic versus narrative review formats.</p>
       {% bibliography --query @*[category=evolutionary]* %}
@@ -168,6 +178,7 @@ html {
 
     <section id="strand-5">
       <h3>5. Surf Science & Action Sports Psychology</h3>
+      <img src="{{ '/assets/img/surfresearch.jpg' | relative_url }}" alt="Surf Science and Action Sports" class="img-fluid rounded z-depth-1 mb-3">
       <p>Investigating the psychological and physiological aspects of surfing and adaptive action sports, this strand explores perceptual-cognitive expertise, motor asymmetry, and performance judging. Specific topics include laterality effects (Goofy vs. Regular stance), the influence of post-performance expressions ("claiming") on wave scoring, and adaptation patterns in Para surfing.</p>
       {% bibliography --query @*[category=surf]* %}
     </section>
