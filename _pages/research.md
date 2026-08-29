@@ -136,13 +136,9 @@ nav_order: 2
   border-bottom: none;
 }
 
-/* Collapsible Publications Styling */
-.pub-wrapper ol.bibliography > li:nth-child(n+4) {
-  display: none;
-}
-
-.pub-wrapper.expanded ol.bibliography > li {
-  display: list-item !important;
+/* Hidden elements class */
+.compact-research ol.bibliography > li.pub-hidden {
+  display: none !important;
 }
 
 .pub-toggle-btn {
@@ -153,7 +149,7 @@ nav_order: 2
   font-weight: 600;
   cursor: pointer;
   padding: 4px 0;
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -222,8 +218,8 @@ html {
     <ul>
       <li><a href="#strand-1">1. Nonverbal Behavior</a></li>
       <li><a href="#strand-2">2. Executive Functions</a></li>
-      <li><a href="#strand-3">3. Match Analysis</a></li>
-      <li><a href="#strand-4">4. Metascience & Evolution</a></li>
+      <li><a href="#strand-3">3. Metascience & Evolution</a></li>
+      <li><a href="#strand-4">4. Match Analysis</a></li>
       <li><a href="#strand-5">5. Surf Science</a></li>
     </ul>
   </nav>
@@ -264,23 +260,7 @@ html {
     </section>
 
     <section id="strand-3" class="strand-card">
-      <h3>3. Sport Science, Match Analyses & Penalty Kicks</h3>
-      <img src="{{ '/assets/img/penaltyresearch.jpg' | relative_url }}" alt="Match Analysis and Penalty Kicks" class="strand-img">
-      <div class="strand-lead">
-        <p>Focused on elite performance analysis, this research strand applies systematic video-notational methods, spatial analytics, and psychological profiling to understand decision-making under high stakes. Major areas of inquiry include the mechanical and psychological determinants of soccer penalty kicks, home advantage phenomena, and the objectivity of match analysis data used by elite coaching staff.</p>
-        <p>By evaluating parameters such as visuomotor calibration, pressure, and perceptual strategies in sports like soccer, tennis, and darts, this work bridges match data analytics with actionable insights for talent development and opponent preparation.</p>
-      </div>
-
-      <hr class="section-divider">
-      <h4 class="pub-heading">Selected Strand Publications</h4>
-      <div class="pub-wrapper">
-        {% bibliography --query @*[category=match_analysis]* %}
-        <button class="pub-toggle-btn" onclick="togglePubs(this)">+ Show all publications</button>
-      </div>
-    </section>
-
-    <section id="strand-4" class="strand-card">
-      <h3>4. Evolutionary Perspectives, Biocultural Models & Metascience</h3>
+      <h3>3. Evolutionary Perspectives, Biocultural Models & Metascience</h3>
       <img src="{{ '/assets/img/evolutionresearch.jpg' | relative_url }}" alt="Evolutionary Perspectives and Metascience" class="strand-img">
       <div class="strand-lead">
         <p>This interdisciplinary line uses evolutionary behavioral science to understand modern athletic competition as a window into human nature, physical play, and competitive signaling. Topics range from biocultural frameworks of play to evolutionary hypotheses explaining home ground territoriality and relative age effects in talent identification.</p>
@@ -291,6 +271,22 @@ html {
       <h4 class="pub-heading">Selected Strand Publications</h4>
       <div class="pub-wrapper">
         {% bibliography --query @*[category=evolutionary]* %}
+        <button class="pub-toggle-btn" onclick="togglePubs(this)">+ Show all publications</button>
+      </div>
+    </section>
+
+    <section id="strand-4" class="strand-card">
+      <h3>4. Sport Science, Match Analyses & Penalty Kicks</h3>
+      <img src="{{ '/assets/img/penaltyresearch.jpg' | relative_url }}" alt="Match Analysis and Penalty Kicks" class="strand-img">
+      <div class="strand-lead">
+        <p>Focused on elite performance analysis, this research strand applies systematic video-notational methods, spatial analytics, and psychological profiling to understand decision-making under high stakes. Major areas of inquiry include the mechanical and psychological determinants of soccer penalty kicks, home advantage phenomena, and the objectivity of match analysis data used by elite coaching staff.</p>
+        <p>By evaluating parameters such as visuomotor calibration, pressure, and perceptual strategies in sports like soccer, tennis, and darts, this work bridges match data analytics with actionable insights for talent development and opponent preparation.</p>
+      </div>
+
+      <hr class="section-divider">
+      <h4 class="pub-heading">Selected Strand Publications</h4>
+      <div class="pub-wrapper">
+        {% bibliography --query @*[category=match_analysis]* %}
         <button class="pub-toggle-btn" onclick="togglePubs(this)">+ Show all publications</button>
       </div>
     </section>
@@ -314,9 +310,34 @@ html {
 </div>
 
 <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const wrappers = document.querySelectorAll(".pub-wrapper");
+  wrappers.forEach(function (wrapper) {
+    const items = wrapper.querySelectorAll("ol.bibliography > li");
+    if (items.length <= 3) {
+      const btn = wrapper.querySelector(".pub-toggle-btn");
+      if (btn) btn.style.display = "none";
+    } else {
+      for (let i = 3; i < items.length; i++) {
+        items[i].classList.add("pub-hidden");
+      }
+    }
+  });
+});
+
 function togglePubs(button) {
   const wrapper = button.parentElement;
-  const isExpanded = wrapper.classList.toggle('expanded');
-  button.textContent = isExpanded ? '– Show fewer publications' : '+ Show all publications';
+  const hiddenItems = wrapper.querySelectorAll("ol.bibliography > li.pub-hidden");
+  const allItems = wrapper.querySelectorAll("ol.bibliography > li");
+
+  if (hiddenItems.length > 0) {
+    hiddenItems.forEach(el => el.classList.remove("pub-hidden"));
+    button.textContent = "– Show fewer publications";
+  } else {
+    for (let i = 3; i < allItems.length; i++) {
+      allItems[i].classList.add("pub-hidden");
+    }
+    button.textContent = "+ Show all publications";
+  }
 }
 </script>
