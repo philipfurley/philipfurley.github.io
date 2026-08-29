@@ -8,33 +8,14 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-  more_info: >
-    <div class="sidebar-contact">
-      <div class="contact-item">
-        <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:p.furley@dshs-koeln.de">p.furley@dshs-koeln.de</a>
-      </div>
-      <div class="contact-item">
-        <i class="fa-solid fa-phone"></i>
-        <span>+49 221 4982-4310</span>
-      </div>
-      <div class="contact-item">
-        <i class="fa-solid fa-building-columns"></i>
-        <span>Inst. of Exercise Training & Sport Informatics</span>
-      </div>
-      <div class="contact-item">
-        <i class="fa-solid fa-location-dot"></i>
-        <span>Am Sportpark Müngersdorf 6<br>50933 Köln, Germany</span>
-      </div>
-    </div>
 
 selected_papers: false
 social: true
 ---
 
 <style>
-/* Crisp & Refined Sidebar Contact Styling */
-.sidebar-contact {
+/* Refined Sidebar Contact Styling */
+.profile .more-info {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 0.8rem;
   line-height: 1.45;
@@ -114,6 +95,35 @@ social: true
 }
 </style>
 
+<script>
+/* Inject contact block under profile image on load */
+document.addEventListener("DOMContentLoaded", function () {
+  const profileMoreInfo = document.querySelector(".profile .more-info");
+  if (profileMoreInfo) {
+    profileMoreInfo.innerHTML = `
+      <div class="sidebar-contact">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:p.furley@dshs-koeln.de">p.furley@dshs-koeln.de</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+49 221 4982-4310</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-building-columns"></i>
+          <span>Inst. of Exercise Training & Sport Informatics</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Am Sportpark Müngersdorf 6<br>50933 Köln, Germany</span>
+        </div>
+      </div>
+    `;
+  }
+});
+</script>
+
 <div class="bio-lead">
   <p>I am a professor (PD Dr.) at the <strong>German Sport University Cologne</strong>, where I serve as Deputy Head of the <strong>Institute of Exercise Training and Sport Informatics</strong>. My work has been recognized with the highest honor in German sport science—the <strong>DOSB Science Award</strong>—and is supported by major competitive grants, including funding from the German Research Foundation (DFG).</p>
 </div>
@@ -122,7 +132,7 @@ social: true
 <div class="about-highlights">
   <div class="highlight-card">
     <h4><i class="fa-solid fa-user-graduate"></i> Academic Rank</h4>
-    <p>Privatdozent (PD Dr.) & Senior Lecturer</p>
+    <p>Professor (PD Dr.)</p>
   </div>
   <div class="highlight-card">
     <h4><i class="fa-solid fa-trophy"></i> Recognition</h4>
