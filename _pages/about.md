@@ -8,6 +8,11 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
+  more_info: >
+    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:p.furley@dshs-koeln.de">p.furley@dshs-koeln.de</a></p>
+    <p><i class="fa-solid fa-phone"></i> +49 221 4982-4310</p>
+    <p><i class="fa-solid fa-building-columns"></i> Inst. of Exercise Training &amp; Sport Informatics</p>
+    <p><i class="fa-solid fa-location-dot"></i> Am Sportpark Müngersdorf 6<br>50933 Köln, Germany</p>
 
 selected_papers: false
 social: true
@@ -15,7 +20,7 @@ social: true
 
 <style>
 /* Refined Sidebar Contact Styling */
-.sidebar-contact {
+.profile .more-info {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 0.8rem;
   line-height: 1.45;
@@ -25,13 +30,13 @@ social: true
   border-top: 1px solid var(--global-divider-color, #e5e5e5);
 }
 
-.sidebar-contact p {
+.profile .more-info p {
   margin-bottom: 0.45rem !important;
   display: flex;
   align-items: flex-start;
 }
 
-.sidebar-contact i {
+.profile .more-info i {
   width: 16px;
   min-width: 16px;
   margin-right: 8px;
@@ -41,13 +46,13 @@ social: true
   text-align: center;
 }
 
-.sidebar-contact a {
+.profile .more-info a {
   color: var(--global-text-color-light, #4a4a4a);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.sidebar-contact a:hover {
+.profile .more-info a:hover {
   color: var(--global-theme-color, #007bff);
 }
 
@@ -99,7 +104,7 @@ social: true
 <div class="about-highlights">
   <div class="highlight-card">
     <h4><i class="fa-solid fa-user-graduate"></i> Academic Rank</h4>
-    <p>Privatdozent (PD Dr.) & Senior Lecturer</p>
+    <p>Privatdozent (PD Dr.) &amp; Senior Lecturer</p>
   </div>
   <div class="highlight-card">
     <h4><i class="fa-solid fa-trophy"></i> Recognition</h4>
@@ -114,20 +119,3 @@ social: true
 <p>My research program advances our understanding of human emotion, nonverbal expressions, visual attention, and cognitive functioning under high pressure. A cornerstone of my work is the application of an <em>in situ</em> ethological approach within the rich, ecologically valid context of competitive sport.</p>
 
 <p>By taking psychological inquiry out of artificial laboratory environments and examining high-stakes athletic scenarios, my lab leverages sports as a naturalistic lens to decode fundamental principles of human psychology, affective processes, nonverbal communication, and executive functioning. Ultimately, this research seeks to bridge the gap between basic cognitive-affective science and real-world human performance, offering novel insights into how individuals adapt, communicate, and excel when stakes are high.</p>
-
-<script>
-window.addEventListener("DOMContentLoaded", function () {
-  const profile = document.querySelector(".profile");
-  if (profile) {
-    const contactDiv = document.createElement("div");
-    contactDiv.className = "more-info sidebar-contact";
-    contactDiv.innerHTML = `
-      <p><i class="fa-solid fa-envelope"></i> <a href="mailto:p.furley@dshs-koeln.de">p.furley@dshs-koeln.de</a></p>
-      <p><i class="fa-solid fa-phone"></i> +49 221 4982-4310</p>
-      <p><i class="fa-solid fa-building-columns"></i> Inst. of Exercise Training &amp; Sport Informatics</p>
-      <p><i class="fa-solid fa-location-dot"></i> Am Sportpark Müngersdorf 6<br>50933 Köln, Germany</p>
-    `;
-    profile.appendChild(contactDiv);
-  }
-});
-</script>
