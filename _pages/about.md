@@ -14,7 +14,6 @@ social: true
 ---
 
 <style>
-/* Sidebar Contact Styling */
 .sidebar-contact {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 0.8rem;
@@ -51,7 +50,6 @@ social: true
   color: var(--global-theme-color, #007bff);
 }
 
-/* Feature Grid Cards */
 .about-highlights {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
