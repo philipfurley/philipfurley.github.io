@@ -1,245 +1,177 @@
----
-layout: page
-title: media coverage
-permalink: /media/
-nav: true
-nav_order: 4
+# Media & Public Engagement
+
+A curated selection of international press coverage, television and radio features, podcast appearances, and academic award announcements featuring research on nonverbal behavior, penalty shootouts, sports psychology, executive functions, and visual attention.
+
 ---
 
-<style>
-.media-section {
-  margin-top: 2rem;
-  margin-bottom: 2.5rem;
-}
+## 🏆 Science Awards & Major Honors
 
-.media-section-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--global-theme-color, #007bff);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.25rem;
-  border-bottom: 2px solid var(--global-divider-color, #e2e8f0);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+* <img src="https://img.shields.org/badge/DOSB-Wissenschaftspreis-003366?style=for-the-badge&logo=olympus&logoColor=white" height="24" alt="DOSB Award"/> **1st Place – DOSB-Wissenschaftspreis (German Olympic Sports Confederation)**
+  * **SPORT1:** [*DOSB-Wissenschaftspreis an Philip Furley verliehen*](https://www.sport1.de/news/olympia/2023/02/dosb-wissenschaftspreis-an-philip-furley-verliehen) *(Feb 2023)*
+  * **DSHS Köln News:** [*Erster Preis beim DOSB-Wissenschaftspreis für Dr. Philip Furley*](https://www.dshs-koeln.de/aktuelles/meldungen-details/meldung/dosb-wissenschaftspreis-1/) *(Feb 2023)*
+  * **junge Welt:** [*Sportwissenschaft: Ohne Worte (I)*](https://www.jungewelt.de/artikel/442675.sportwissenschaft-ohne-worte-i.html) *(Jan 2023)*
+  * **Forschung & Lehre:** [*DOSB Wissenschaftspreis – Auszeichnungen & Karriere*](https://www.forschung-und-lehre.de/karriere/preise/preise-mai-2023-5575) *(May 2023)*
 
-.media-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.25rem;
-}
+---
 
-.media-card {
-  background: var(--global-card-bg, #fcfcfc);
-  border: 1px solid var(--global-divider-color, #e9ecef);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none !important;
-  color: inherit !important;
-}
+## 📰 International & National Press
 
-.media-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-}
+<table>
+  <thead>
+    <tr>
+      <th width="12%">Outlet</th>
+      <th width="48%">Article / Feature Title</th>
+      <th width="40%">Key Topic & Research Focus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">
+        <a href="https://www.nytimes.com">
+          <img src="https://img.shields.org/badge/The_New_York_Times-000000?style=for-the-badge&logo=newyorktimes&logoColor=white" alt="The New York Times" width="130"/>
+        </a>
+      </td>
+      <td>
+        <a href="https://www.nytimes.com/2018/07/10/sports/world-cup/england-croatia-france-belgium.html">
+          <strong>How England Broke Its Penalty Shootout Curse at the World Cup</strong>
+        </a> <em>(July 2018)</em>
+      </td>
+      <td>Analysis of England's psychological shift in penalty shootouts, focusing on body language, nonverbal gaze avoidance, and <em>"hastening and hiding"</em> under pressure.</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://www.nytimes.com/athletic/">
+          <img src="https://img.shields.org/badge/NYT_/_The_Athletic-000000?style=for-the-badge&logo=newyorktimes&logoColor=white" alt="The Athletic" width="130"/>
+        </a>
+      </td>
+      <td>
+        <a href="https://www.nytimes.com/athletic/7090564/2026/03/06/kevin-durant-caleb-williams-body-language-expert/">
+          <strong>What Body Language Expert Analysis Tells Us About Kevin Durant, Caleb Williams, and Elite Athlete Performance Under Pressure</strong>
+        </a> <em>(March 2026)</em>
+      </td>
+      <td>Expert evaluation decoding nonverbal micro-gestures, emotional displays, and performance predictability in elite American professional sports.</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://www.theguardian.com">
+          <img src="https://img.shields.org/badge/The_Guardian-052962?style=for-the-badge&logo=theguardian&logoColor=white" alt="The Guardian" width="130"/>
+        </a>
+      </td>
+      <td>
+        <a href="https://www.theguardian.com/sport/2025/oct/13/luke-littler-poker-face-key-to-dominance-darts">
+          <strong>Luke Littler’s Poker Face May Be the Key to His Dominance in Darts</strong>
+        </a> <em>(Oct 2025)</em>
+      </td>
+      <td>Thin-slice analysis of nonverbal cues, facial composure, and throwing predictability in high-level darts competition.</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://www.theguardian.com">
+          <img src="https://img.shields.org/badge/The_Guardian-052962?style=for-the-badge&logo=theguardian&logoColor=white" alt="The Guardian" width="130"/>
+        </a>
+      </td>
+      <td>
+        <a href="https://www.theguardian.com/sport/blog/2021/dec/27/like-a-red-rag-to-a-tiger-academics-argue-on-shirt-colour-affecting-results">
+          <strong>Like a Red Rag to a Tiger: Can Shirt Colours Really Affect Results in Sport?</strong>
+        </a> <em>(Dec 2021)</em>
+      </td>
+      <td>Meta-analysis evaluating uniform color theories and testing whether red shirt colors confer a psychological edge in football.</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://www.spiegel.de">
+          <img src="https://img.shields.org/badge/DER_SPIEGEL-E60000?style=for-the-badge&logo=spiegel&logoColor=white" alt="DER SPIEGEL" width="130"/>
+        </a>
+      </td>
+      <td>
+        <a href="https://www.spiegel.de/wissenschaft/mensch/fussball-bundesliga-koerpersprache-verraet-unsicherheit-von-schiedsrichtern-a-1144222.html">
+          <strong>Studie: Körpersprache verrät Unsicherheit von Schiedsrichtern</strong>
+        </a> <em>(April 2017)</em>
+      </td>
+      <td>Point-light display studies examining how nonverbal signaling reveals referee uncertainty and influences player perception.</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://www.independent.co.uk">
+          <img src="https://img.shields.org/badge/The_Independent-C8102E?style=for-the-badge&logo=independent&logoColor=white" alt="The Independent" width="130"/>
+        </a>
+      </td>
+      <td>
+        <a href="https://www.independent.co.uk/life-style/lionesses-chloe-kelly-shirt-celebration-b2136200.html">
+          <strong>Chloe Kelly Proved It’s Not Just Male Footballers Who Love to Rip Off Their Shirts</strong>
+        </a> <em>(Aug 2022)</em>
+      </td>
+      <td>Analysis of post-outcome goal celebrations, nonverbal displays of pride, and emotional relief under pressure.</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://www.huffingtonpost.co.uk">
+          <img src="https://img.shields.org/badge/HuffPost-0D7E66?style=for-the-badge&logo=huffpost&logoColor=white" alt="HuffPost" width="130"/>
+        </a>
+      </td>
+      <td>
+        <a href="https://www.huffingtonpost.co.uk/dr-raj-persaud/inside-the-mind-of-the-pe_b_1624132.html">
+          <strong>Inside the Mind of the Penalty Taker: Can Psychology Explain Why England Fails in Shootouts?</strong>
+        </a> <em>(June 2012)</em>
+      </td>
+      <td>Exploring player routines, gaze behavior, and psychological pressure mechanisms during major tournament penalty shootouts.</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://idw-online.de">
+          <img src="https://img.shields.org/badge/idw_News-005B94?style=for-the-badge&logo=rss&logoColor=white" alt="idw-online" width="130"/>
+        </a>
+      </td>
+      <td>
+        <a href="https://idw-online.de/de/news560979">
+          <strong>Der Ausdruck von Sieg und Niederlage im Sport</strong>
+        </a> <em>(Nov 2013)</em>
+      </td>
+      <td>Investigating the universals of nonverbal pride and shame expressions in elite international sporting contests.</td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://www.asp-sportpsychologie.de">
+          <img src="https://img.shields.org/badge/asp_Sportpsychologie-006699?style=for-the-badge&logo=academic&logoColor=white" alt="asp" width="130"/>
+        </a>
+      </td>
+      <td>
+        <a href="https://www.asp-sportpsychologie.de/newsartikel/news-5-99">
+          <strong>Körpersprache im Sport: Hintergründe und Auswirkung</strong>
+        </a>
+      </td>
+      <td>Synthesizing nonverbal dynamics, person perception, and emotion communication in competitive sport settings.</td>
+    </tr>
+  </tbody>
+</table>
 
-.media-thumb-container {
-  width: 100%;
-  height: 140px;
-  background-color: #f1f5f9;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+---
 
-.media-thumb {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+## 🎙️ Broadcast, Radio & Podcasts
 
-.media-thumb-placeholder {
-  font-size: 2.5rem;
-  color: var(--global-theme-color, #007bff);
-  opacity: 0.4;
-}
+* <img src="https://img.shields.org/badge/Deutschlandfunk_Kultur-E30613?style=for-the-badge&logo=radio&logoColor=white" height="24" alt="DLF Kultur"/> **Deutschlandfunk Kultur (Nachspiel)**
+  * [*Körpersprache im Sport – Kopf hoch und klare Ansage*](https://www.deutschlandfunkkultur.de/koerpersprache-sport-100.html) *(Aug 2022)*  
+  * *Focus:* Deep dive into power posing, nonverbal alpha posturing, and body feedback loops in competitive sports.
 
-.media-body {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
+* <img src="https://img.shields.org/badge/DSHS_Podcast-003366?style=for-the-badge&logo=spotify&logoColor=white" height="24" alt="Eine Runde mit"/> **Eine Runde mit – Der DSHS Wissenschaftspodcast**
+  * [*Episode #54: Dr. Philip Furley – Spielgesten*](https://www.dshs-koeln.de/universitaet/newsroom/wissenschaftspodcast-eine-runde-mit) *(Aug 2026)*  
+  * *Focus:* How subtle micro-gestures, gaze cues, and body language affect player focus and self-control under pressure.
 
-.media-outlet {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--global-theme-color, #007bff);
-  margin-bottom: 0.3rem;
-}
+* <img src="https://img.shields.org/badge/Behavioral_Sports_Podcast-4B0082?style=for-the-badge&logo=applepodcasts&logoColor=white" height="24" alt="Behavioral Sports Psychology"/> **Behavioral Sports Psychology Podcast**
+  * [*Studying nonverbal behavior in competitive game/sport scenarios*](https://behavior-podcast.com/learnings-from-studying-nonverbal-behavior-in-sports-with-philip-furley/) *(Feb 2023)*  
+  * *Focus:* Point-light displays, thin-slice predictions, team dynamics, and penalty shootout strategies.
 
-.media-title {
-  font-size: 0.95rem;
-  font-weight: 600;
-  line-height: 1.35;
-  margin-bottom: 0.5rem;
-  color: var(--global-text-color, #1a202c);
-}
+---
 
-.media-description {
-  font-size: 0.825rem;
-  line-height: 1.45;
-  color: var(--global-text-color-light, #4a5568);
-  margin: 0;
-  flex-grow: 1;
-}
+## 🏛️ Institutional Media Directory (DSHS Köln FIS Profile)
 
-html[data-theme='dark'] .media-card {
-  background: #2c2c2e !important;
-  border-color: #3a3a3c !important;
-}
+Selected press bulletins and media releases registered in the **Deutsche Sporthochschule Köln Research Information System**:
 
-html[data-theme='dark'] .media-thumb-container {
-  background-color: #1c1c1e;
-}
+* 📄 *Warum machen das so wenige? Ein Elfmeter in diese Ecke geht fast immer rein* *(July 2026)*
+* 📄 *Red shirt color has no effect on winning in European Soccer* *(Oct 2021)*
+* 📄 *English Goalkeepers and the Penalty Curse Re-examined* *(May 2021)*
+* 📄 *Fußball: Gibt es den Elfmeterfluch wirklich?* *(May 2020)*
+* 📄 *Körpersprache verrät Unsicherheit von Fußball-Schiedsrichtern* *(April 2017)*
+* 📄 *Nonverbales Verhalten von Fußballschiedsrichtern und Effekte auf Wahrnehmung* *(Jan 2017)*
 
-html[data-theme='dark'] .media-title {
-  color: #f4f4f5 !important;
-}
-
-html[data-theme='dark'] .media-description {
-  color: #a1a1aa !important;
-}
-</style>
-
-<!-- SECTION 1: BODY LANGUAGE & NONVERBAL BEHAVIOR -->
-<div class="media-section">
-  <div class="media-section-title">
-    <i class="fa-solid fa-user-group"></i> Body Language &amp; Nonverbal Behavior
-  </div>
-  <div class="media-grid">
-
-    <a href="https://www.theguardian.com/sport/2025/oct/13/luke-littler-poker-face-key-to-dominance-darts" target="_blank" rel="noopener noreferrer" class="media-card">
-      <div class="media-thumb-container">
-        <img src="https://img.logo.dev/theguardian.com?token=pk_X1-Y3111T-29_7-1111111" alt="The Guardian" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-        <i class="fa-solid fa-bullseye media-thumb-placeholder" style="display:none;"></i>
-      </div>
-      <div class="media-body">
-        <div class="media-outlet">The Guardian</div>
-        <div class="media-title">Luke Littler's Poker Face May Be the Key to His Dominance in Darts</div>
-        <p class="media-description">Feature on empirical research using the Facial Action Coding System (FACS) to analyze nonverbal cues and tension prior to high-stakes throws.</p>
-      </div>
-    </a>
-
-    <a href="https://www.youtube.com/watch?v=1Cf2xoYlSCY" target="_blank" rel="noopener noreferrer" class="media-card">
-      <div class="media-thumb-container">
-        <img src="https://img.youtube.com/vi/1Cf2xoYlSCY/hqdefault.jpg" alt="DSHS Podcast" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-        <i class="fa-solid fa-podcast media-thumb-placeholder" style="display:none;"></i>
-      </div>
-      <div class="media-body">
-        <div class="media-outlet">DSHS Wissenschaftspodcast</div>
-        <div class="media-title">#54 Game Gestures &amp; Nonverbal Communication in Sport</div>
-        <p class="media-description">In-depth podcast episode on post-error gestures, emotion regulation, and executive control under high pressure.</p>
-      </div>
-    </a>
-
-    <a href="https://scf33298fe03e3221.jimcontent.com/download/version/1627393823/module/12781310199/name/Pr%C3%A4sentation%20Pers%C3%B6nlichkeit%20Kommunikation.pdf" target="_blank" rel="noopener noreferrer" class="media-card">
-      <div class="media-thumb-container">
-        <i class="fa-solid fa-whistle media-thumb-placeholder"></i>
-      </div>
-      <div class="media-body">
-        <div class="media-outlet">Sports Science Press</div>
-        <div class="media-title">Referee Body Language and Nonverbal Signals</div>
-        <p class="media-description">Coverage examining how referee body language and nonverbal cues shape player perception and match authority.</p>
-      </div>
-    </a>
-
-  </div>
-</div>
-
-<!-- SECTION 2: PENALTY SHOOTOUT PSYCHOLOGY -->
-<div class="media-section">
-  <div class="media-section-title">
-    <i class="fa-solid fa-futbol"></i> Penalty Shootout Psychology
-  </div>
-  <div class="media-grid">
-
-    <a href="https://fis.dshs-koeln.de/de/clippings/warum-machen-das-so-wenige-ein-elfmeter-in-diese-ecke-geht-fast-i/" target="_blank" rel="noopener noreferrer" class="media-card">
-      <div class="media-thumb-container">
-        <i class="fa-solid fa-stopwatch media-thumb-placeholder"></i>
-      </div>
-      <div class="media-body">
-        <div class="media-outlet">Media Feature</div>
-        <div class="media-title">Penaltys sind Kopfsache: Körpersignale vor dem Schuss</div>
-        <p class="media-description">Analysis of visual attention, hastening and hiding behavior, and pressure coping mechanisms in penalty shootouts.</p>
-      </div>
-    </a>
-
-    <a href="https://idw-online.de/de/news746969" target="_blank" rel="noopener noreferrer" class="media-card">
-      <div class="media-thumb-container">
-        <img src="https://img.logo.dev/idw-online.de?token=pk_X1-Y3111T-29_7-1111111" alt="idw-online" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-        <i class="fa-solid fa-newspaper media-thumb-placeholder" style="display:none;"></i>
-      </div>
-      <div class="media-body">
-        <div class="media-outlet">idw Nachrichten</div>
-        <div class="media-title">Der Mythos vom englischen Elfmeterfluch</div>
-        <p class="media-description">Scientific press feature analyzing data across European leagues, World Cups, and European Championships.</p>
-      </div>
-    </a>
-
-    <a href="https://www.nature.com/articles/s41598-020-63889-6" target="_blank" rel="noopener noreferrer" class="media-card">
-      <div class="media-thumb-container">
-        <img src="https://img.logo.dev/nature.com?token=pk_X1-Y3111T-29_7-1111111" alt="Nature" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-        <i class="fa-solid fa-flask media-thumb-placeholder" style="display:none;"></i>
-      </div>
-      <div class="media-body">
-        <div class="media-outlet">Scientific Reports (Nature)</div>
-        <div class="media-title">English Football Players Are Not as Bad at Kicking Penalties as Assumed</div>
-        <p class="media-description">Empirical evaluation of penalty kick performance metrics across major international tournaments.</p>
-      </div>
-    </a>
-
-  </div>
-</div>
-
-<!-- SECTION 3: AWARDS & RECOGNITION -->
-<div class="media-section">
-  <div class="media-section-title">
-    <i class="fa-solid fa-trophy"></i> Awards &amp; Scientific Recognition
-  </div>
-  <div class="media-grid">
-
-    <a href="https://www.sport1.de/news/olympia/2023/02/dosb-wissenschaftspreis-an-philip-furley-verliehen" target="_blank" rel="noopener noreferrer" class="media-card">
-      <div class="media-thumb-container">
-        <img src="https://img.logo.dev/sport1.de?token=pk_X1-Y3111T-29_7-1111111" alt="SPORT1" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-        <i class="fa-solid fa-award media-thumb-placeholder" style="display:none;"></i>
-      </div>
-      <div class="media-body">
-        <div class="media-outlet">SPORT1 • 2023</div>
-        <div class="media-title">DOSB-Wissenschaftspreis an Philip Furley verliehen</div>
-        <p class="media-description">National reporting on winning 1st place in the DOSB Science Award for outstanding research in sport science.</p>
-      </div>
-    </a>
-
-    <a href="https://fis.dshs-koeln.de/de/persons/philip-furley/" target="_blank" rel="noopener noreferrer" class="media-card">
-      <div class="media-thumb-container">
-        <i class="fa-solid fa-graduation-cap media-thumb-placeholder"></i>
-      </div>
-      <div class="media-body">
-        <div class="media-outlet">DSHS Academic Profile</div>
-        <div class="media-title">Toyota &amp; DOSB Science Awards Distinction</div>
-        <p class="media-description">Official summary of honors, DFG grants, and nonverbal behavior research projects at German Sport University Cologne.</p>
-      </div>
-    </a>
-
-  </div>
-</div>
+🔗 **Full Institutional Profile & Publications:** [PD Dr. Philip Furley – DSHS FIS Registry](https://fis.dshs-koeln.de/de/persons/philip-furley/)
