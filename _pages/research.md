@@ -111,6 +111,35 @@ nav_order: 2
   margin-bottom: 0.75rem;
 }
 
+/* Dark Mode Overrides for High Contrast */
+html[data-theme='dark'] .strand-card,
+html[data-theme='dark'] .research-sidebar {
+  background: #2c2c2e !important;
+  border-color: #3a3a3c !important;
+}
+
+html[data-theme='dark'] .strand-card {
+  border-left: 1px solid #3a3a3c !important;
+}
+
+html[data-theme='dark'] .research-sidebar {
+  border-left: 3px solid var(--global-theme-color, #007bff) !important;
+}
+
+html[data-theme='dark'] .strand-card .strand-lead,
+html[data-theme='dark'] .strand-card p,
+html[data-theme='dark'] .research-sidebar h4,
+html[data-theme='dark'] .compact-research .title {
+  color: #ffffff !important;
+}
+
+html[data-theme='dark'] .research-sidebar a,
+html[data-theme='dark'] .strand-card h4.pub-heading,
+html[data-theme='dark'] .compact-research .author,
+html[data-theme='dark'] .compact-research .periodical {
+  color: #b0b0b5 !important;
+}
+
 /* Compact Publications Styles */
 .compact-research h2.bibliography {
   display: none !important;
@@ -218,7 +247,7 @@ html {
     <ul>
       <li><a href="#strand-1">1. Nonverbal Behavior</a></li>
       <li><a href="#strand-2">2. Executive Functions</a></li>
-      <li><a href="#strand-3">3. Metascience & Evolution</a></li>
+      <li><a href="#strand-3">3. Metascience &amp; Evolution</a></li>
       <li><a href="#strand-4">4. Match Analysis</a></li>
       <li><a href="#strand-5">5. Surf Science</a></li>
     </ul>
@@ -228,7 +257,7 @@ html {
   <div class="compact-research">
 
     <section id="strand-1" class="strand-card">
-      <h3>1. Nonverbal Behavior, Emotion & Social Perception in Sport</h3>
+      <h3>1. Nonverbal Behavior, Emotion &amp; Social Perception in Sport</h3>
       <img src="{{ '/assets/img/nvbresearch.jpg' | relative_url }}" alt="Nonverbal Behavior in Sport" class="strand-img">
       <div class="strand-lead">
         <p>This research strand investigates how human emotions and nonverbal signals are communicated, perceived, and utilized in high-pressure athletic environments. Utilizing thin-slice methodology, 3D pose analysis, and Facial Action Coding (FACS), this work explores how body language, facial expressions, and emotional displays influence expectancy of success, impression formation, and strategic interactions between opponents, teammates, and coaches.</p>
@@ -244,7 +273,7 @@ html {
     </section>
 
     <section id="strand-2" class="strand-card">
-      <h3>2. Executive Functions, Attention & Cognitive Load</h3>
+      <h3>2. Executive Functions, Attention &amp; Cognitive Load</h3>
       <img src="{{ '/assets/img/attentionresearch.jpg' | relative_url }}" alt="Executive Functions and Attention" class="strand-img">
       <div class="strand-lead">
         <p>This research line explores the cognitive architecture underlying elite human movement and tactical decision-making. Focusing on working memory capacity, visual attention, inattentional blindness, and dual-process models, the goal is to unravel how athletes process complex environmental stimuli while maintaining self-control under fatigue and cognitive load.</p>
@@ -260,7 +289,7 @@ html {
     </section>
 
     <section id="strand-3" class="strand-card">
-      <h3>3. Evolutionary Perspectives, Biocultural Models & Metascience</h3>
+      <h3>3. Evolutionary Perspectives, Biocultural Models &amp; Metascience</h3>
       <img src="{{ '/assets/img/evolutionresearch.jpg' | relative_url }}" alt="Evolutionary Perspectives and Metascience" class="strand-img">
       <div class="strand-lead">
         <p>This interdisciplinary line uses evolutionary behavioral science to understand modern athletic competition as a window into human nature, physical play, and competitive signaling. Topics range from biocultural frameworks of play to evolutionary hypotheses explaining home ground territoriality and relative age effects in talent identification.</p>
@@ -276,7 +305,7 @@ html {
     </section>
 
     <section id="strand-4" class="strand-card">
-      <h3>4. Sport Science, Match Analyses & Penalty Kicks</h3>
+      <h3>4. Sport Science, Match Analyses &amp; Penalty Kicks</h3>
       <img src="{{ '/assets/img/penaltyresearch.jpg' | relative_url }}" alt="Match Analysis and Penalty Kicks" class="strand-img">
       <div class="strand-lead">
         <p>Focused on elite performance analysis, this research strand applies systematic video-notational methods, spatial analytics, and psychological profiling to understand decision-making under high stakes. Major areas of inquiry include the mechanical and psychological determinants of soccer penalty kicks, home advantage phenomena, and the objectivity of match analysis data used by elite coaching staff.</p>
@@ -292,7 +321,7 @@ html {
     </section>
 
     <section id="strand-5" class="strand-card">
-      <h3>5. Surf Science & Action Sports Psychology</h3>
+      <h3>5. Surf Science &amp; Action Sports Psychology</h3>
       <img src="{{ '/assets/img/surfresearch.jpg' | relative_url }}" alt="Surf Science and Action Sports" class="strand-img">
       <div class="strand-lead">
         <p>Investigating the psychological and physiological aspects of surfing and adaptive action sports, this strand explores perceptual-cognitive expertise, motor asymmetry, and performance judging. Specific topics include laterality effects (Goofy vs. Regular stance), the influence of post-performance expressions ("claiming") on wave scoring, and adaptation patterns in Para surfing.</p>
