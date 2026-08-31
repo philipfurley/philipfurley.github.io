@@ -1,4 +1,10 @@
 /* Force dark text inside white cards */
+.card,
+.card-body,
+.card-title,
+.card-text {
+  color: #212529 !important;
+}/* Force dark text inside white cards */
 .card, .card-body, .card-title, .card-text {
   color: #212529 !important;
 }
