@@ -68,6 +68,48 @@ social: false
   color: var(--global-theme-color, #007bff);
 }
 
+.academic-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--global-divider-color, #e2e8f0);
+}
+
+.academic-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--global-card-bg, #f8f9fa);
+  border: 1px solid var(--global-divider-color, #e2e8f0);
+  color: var(--global-text-color-light, #4a5568);
+  font-size: 1.1rem;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.academic-links a:hover {
+  color: var(--global-theme-color, #007bff);
+  border-color: var(--global-theme-color, #007bff);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+html[data-theme='dark'] .academic-links a {
+  background: #2c2c2e !important;
+  border-color: #3a3a3c !important;
+  color: #a1a1aa !important;
+}
+
+html[data-theme='dark'] .academic-links a:hover {
+  color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+}
+
 .about-highlights {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -124,7 +166,7 @@ html[data-theme='dark'] .highlight-card p {
 <div class="about-highlights">
   <div class="highlight-card">
     <h4><i class="fa-solid fa-user-graduate"></i> Academic Rank</h4>
-    <p>Privatdozent (PD Dr.) &amp; Senior Lecturer</p>
+    <p>Professor (PD Dr.)</p>
   </div>
   <div class="highlight-card">
     <h4><i class="fa-solid fa-trophy"></i> Recognition</h4>
@@ -150,7 +192,12 @@ document.addEventListener("DOMContentLoaded", function () {
       '<div class="contact-item"><i class="fa-solid fa-envelope"></i><span><a href="mailto:p.furley@dshs-koeln.de">p.furley@dshs-koeln.de</a></span></div>' +
       '<div class="contact-item"><i class="fa-solid fa-phone"></i><span>+49 221 4982-4310</span></div>' +
       '<div class="contact-item"><i class="fa-solid fa-building-columns"></i><span>Inst. of Exercise Training &amp; Sport Informatics</span></div>' +
-      '<div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>Am Sportpark Müngersdorf 6<br>50933 Köln, Germany</span></div>';
+      '<div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>Am Sportpark Müngersdorf 6<br>50933 Köln, Germany</span></div>' +
+      '<div class="academic-links">' +
+        '<a href="https://www.researchgate.net/profile/Philip-Furley" target="_blank" rel="noopener noreferrer" title="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>' +
+        '<a href="https://scholar.google.com/citations?user=pFurley" target="_blank" rel="noopener noreferrer" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>' +
+        '<a href="https://orcid.org/0000-0003-3343-2900" target="_blank" rel="noopener noreferrer" title="ORCID"><i class="fa-brands fa-orcid"></i></a>' +
+      '</div>';
     profile.appendChild(contactDiv);
   }
 });
