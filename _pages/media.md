@@ -121,43 +121,45 @@ html[data-theme='dark'] .media-description {
 }
 </style>
 
-<!-- SECTION 1: BODY LANGUAGE & NONVERBAL CUES -->
+<!-- SECTION 1: BODY LANGUAGE & NONVERBAL BEHAVIOR -->
 <div class="media-section">
   <div class="media-section-title">
     <i class="fa-solid fa-user-group"></i> Body Language &amp; Nonverbal Behavior
   </div>
   <div class="media-grid">
 
-    <a href="https://www.theguardian.com" target="_blank" rel="noopener noreferrer" class="media-card">
+    <a href="https://www.theguardian.com/sport/2025/oct/13/luke-littler-poker-face-key-to-dominance-darts" target="_blank" rel="noopener noreferrer" class="media-card">
       <div class="media-thumb-container">
-        <i class="fa-solid fa-bullseye media-thumb-placeholder"></i>
+        <img src="https://img.logo.dev/theguardian.com?token=pk_X1-Y3111T-29_7-1111111" alt="The Guardian" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <i class="fa-solid fa-bullseye media-thumb-placeholder" style="display:none;"></i>
       </div>
       <div class="media-body">
         <div class="media-outlet">The Guardian</div>
-        <div class="media-title">Poker Faces in Darts &amp; Nonverbal Signals</div>
-        <p class="media-description">Coverage of research examining body language, facial expressions, and nonverbal cues under high pressure.</p>
+        <div class="media-title">Luke Littler's Poker Face May Be the Key to His Dominance in Darts</div>
+        <p class="media-description">Feature on empirical research using the Facial Action Coding System (FACS) to analyze nonverbal cues and tension prior to high-stakes throws.</p>
       </div>
     </a>
 
-    <a href="https://www.spiegel.de" target="_blank" rel="noopener noreferrer" class="media-card">
+    <a href="https://www.youtube.com/watch?v=1Cf2xoYlSCY" target="_blank" rel="noopener noreferrer" class="media-card">
+      <div class="media-thumb-container">
+        <img src="https://img.youtube.com/vi/1Cf2xoYlSCY/hqdefault.jpg" alt="DSHS Podcast" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <i class="fa-solid fa-podcast media-thumb-placeholder" style="display:none;"></i>
+      </div>
+      <div class="media-body">
+        <div class="media-outlet">DSHS Wissenschaftspodcast</div>
+        <div class="media-title">#54 Game Gestures &amp; Nonverbal Communication in Sport</div>
+        <p class="media-description">In-depth podcast episode on post-error gestures, emotion regulation, and executive control under high pressure.</p>
+      </div>
+    </a>
+
+    <a href="https://scf33298fe03e3221.jimcontent.com/download/version/1627393823/module/12781310199/name/Pr%C3%A4sentation%20Pers%C3%B6nlichkeit%20Kommunikation.pdf" target="_blank" rel="noopener noreferrer" class="media-card">
       <div class="media-thumb-container">
         <i class="fa-solid fa-whistle media-thumb-placeholder"></i>
       </div>
       <div class="media-body">
-        <div class="media-outlet">Der Spiegel</div>
-        <div class="media-title">Referee Body Language &amp; Match Control</div>
-        <p class="media-description">Analysis of empirical findings on how match officials' body language influences player perception.</p>
-      </div>
-    </a>
-
-    <a href="https://www.dshs-koeln.de" target="_blank" rel="noopener noreferrer" class="media-card">
-      <div class="media-thumb-container">
-        <i class="fa-solid fa-podcast media-thumb-placeholder"></i>
-      </div>
-      <div class="media-body">
-        <div class="media-outlet">DSHS Podcast • 2026</div>
-        <div class="media-title">Performance Under Pressure</div>
-        <p class="media-description">Podcast feature exploring executive control, emotional expression, and nonverbal behavior in sport.</p>
+        <div class="media-outlet">Sports Science Press</div>
+        <div class="media-title">Referee Body Language and Nonverbal Signals</div>
+        <p class="media-description">Coverage examining how referee body language and nonverbal cues shape player perception and match authority.</p>
       </div>
     </a>
 
@@ -171,67 +173,71 @@ html[data-theme='dark'] .media-description {
   </div>
   <div class="media-grid">
 
-    <a href="https://www.huffpost.com" target="_blank" rel="noopener noreferrer" class="media-card">
+    <a href="https://fis.dshs-koeln.de/de/clippings/warum-machen-das-so-wenige-ein-elfmeter-in-diese-ecke-geht-fast-i/" target="_blank" rel="noopener noreferrer" class="media-card">
       <div class="media-thumb-container">
         <i class="fa-solid fa-stopwatch media-thumb-placeholder"></i>
       </div>
       <div class="media-body">
-        <div class="media-outlet">HuffPost</div>
-        <div class="media-title">The Science of Penalty Kicks</div>
-        <p class="media-description">Exploring gaze behavior, visual attention, and body posture during high-stakes penalty shootouts.</p>
+        <div class="media-outlet">Media Feature</div>
+        <div class="media-title">Penaltys sind Kopfsache: Körpersignale vor dem Schuss</div>
+        <p class="media-description">Analysis of visual attention, hastening and hiding behavior, and pressure coping mechanisms in penalty shootouts.</p>
       </div>
     </a>
 
-  </div>
-</div>
-
-<!-- SECTION 3: COLOR PSYCHOLOGY IN SPORTS -->
-<div class="media-section">
-  <div class="media-section-title">
-    <i class="fa-solid fa-palette"></i> Color Psychology in Sports
-  </div>
-  <div class="media-grid">
-
-    <a href="https://www.theguardian.com" target="_blank" rel="noopener noreferrer" class="media-card">
+    <a href="https://idw-online.de/de/news746969" target="_blank" rel="noopener noreferrer" class="media-card">
       <div class="media-thumb-container">
-        <i class="fa-solid fa-shirt media-thumb-placeholder"></i>
+        <img src="https://img.logo.dev/idw-online.de?token=pk_X1-Y3111T-29_7-1111111" alt="idw-online" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <i class="fa-solid fa-newspaper media-thumb-placeholder" style="display:none;"></i>
       </div>
       <div class="media-body">
-        <div class="media-outlet">The Guardian</div>
-        <div class="media-title">Color Effects on Performance &amp; Perception</div>
-        <p class="media-description">Reporting on how uniform colors influence referee decisions, competitor dominance, and perceptual bias.</p>
+        <div class="media-outlet">idw Nachrichten</div>
+        <div class="media-title">Der Mythos vom englischen Elfmeterfluch</div>
+        <p class="media-description">Scientific press feature analyzing data across European leagues, World Cups, and European Championships.</p>
+      </div>
+    </a>
+
+    <a href="https://www.nature.com/articles/s41598-020-63889-6" target="_blank" rel="noopener noreferrer" class="media-card">
+      <div class="media-thumb-container">
+        <img src="https://img.logo.dev/nature.com?token=pk_X1-Y3111T-29_7-1111111" alt="Nature" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <i class="fa-solid fa-flask media-thumb-placeholder" style="display:none;"></i>
+      </div>
+      <div class="media-body">
+        <div class="media-outlet">Scientific Reports (Nature)</div>
+        <div class="media-title">English Football Players Are Not as Bad at Kicking Penalties as Assumed</div>
+        <p class="media-description">Empirical evaluation of penalty kick performance metrics across major international tournaments.</p>
       </div>
     </a>
 
   </div>
 </div>
 
-<!-- SECTION 4: AWARDS & RECOGNITION -->
+<!-- SECTION 3: AWARDS & RECOGNITION -->
 <div class="media-section">
   <div class="media-section-title">
     <i class="fa-solid fa-trophy"></i> Awards &amp; Scientific Recognition
   </div>
   <div class="media-grid">
 
-    <a href="https://www.sport1.de" target="_blank" rel="noopener noreferrer" class="media-card">
+    <a href="https://www.sport1.de/news/olympia/2023/02/dosb-wissenschaftspreis-an-philip-furley-verliehen" target="_blank" rel="noopener noreferrer" class="media-card">
       <div class="media-thumb-container">
-        <i class="fa-solid fa-award media-thumb-placeholder"></i>
+        <img src="https://img.logo.dev/sport1.de?token=pk_X1-Y3111T-29_7-1111111" alt="SPORT1" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <i class="fa-solid fa-award media-thumb-placeholder" style="display:none;"></i>
       </div>
       <div class="media-body">
         <div class="media-outlet">SPORT1 • 2023</div>
-        <div class="media-title">DOSB Science Award Winner</div>
-        <p class="media-description">National sports reporting on receiving the top honor in German sport science.</p>
+        <div class="media-title">DOSB-Wissenschaftspreis an Philip Furley verliehen</div>
+        <p class="media-description">National reporting on winning 1st place in the DOSB Science Award for outstanding research in sport science.</p>
       </div>
     </a>
 
-    <a href="https://www.jungewelt.de" target="_blank" rel="noopener noreferrer" class="media-card">
+    <a href="https://fis.dshs-koeln.de/de/persons/philip-furley/" target="_blank" rel="noopener noreferrer" class="media-card">
       <div class="media-thumb-container">
-        <i class="fa-solid fa-newspaper media-thumb-placeholder"></i>
+        <i class="fa-solid fa-graduation-cap media-thumb-placeholder"></i>
       </div>
       <div class="media-body">
-        <div class="media-outlet">junge Welt • 2023</div>
-        <div class="media-title">Excellence in Sport Psychology</div>
-        <p class="media-description">Coverage highlighting award-winning research on decision-making and cognitive load.</p>
+        <div class="media-outlet">DSHS Academic Profile</div>
+        <div class="media-title">Toyota &amp; DOSB Science Awards Distinction</div>
+        <p class="media-description">Official summary of honors, DFG grants, and nonverbal behavior research projects at German Sport University Cologne.</p>
       </div>
     </a>
 
