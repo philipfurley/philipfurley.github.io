@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"> <html><body> <hr> <style>
+<style>
 .sidebar-contact {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 0.825rem;
@@ -93,7 +93,9 @@ html[data-theme='dark'] .highlight-card p {
   line-height: 1.65;
   color: var(--global-text-color, #222);
 }
-</style> <script>
+</style>
+
+<script>
 document.addEventListener("DOMContentLoaded", function () {
   var profile = document.querySelector(".profile");
   if (profile) {
@@ -107,4 +109,4 @@ document.addEventListener("DOMContentLoaded", function () {
     profile.appendChild(contactDiv);
   }
 });
-</script> </body></html>
+</script>
