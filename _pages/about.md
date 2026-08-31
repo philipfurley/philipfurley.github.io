@@ -13,21 +13,27 @@ selected_papers: false
 social: false
 ---
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
 .sidebar-contact {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 0.825rem;
-  line-height: 1.4;
-  color: var(--global-text-color-light, #4a4a4a);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: var(--global-text-color-light, #4a5568);
   margin-top: 1.25rem;
   padding-top: 1rem;
-  border-top: 1px solid var(--global-divider-color, #e5e5e5);
+  border-top: 1px solid var(--global-divider-color, #e2e8f0);
 }
 
 .sidebar-contact .contact-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.65rem;
   width: 100%;
 }
 
@@ -39,10 +45,11 @@ social: false
   width: 18px;
   min-width: 18px;
   margin-right: 10px;
-  margin-top: 2px;
+  margin-top: 3px;
   color: var(--global-theme-color, #007bff);
   font-size: 0.85rem;
   text-align: center;
+  opacity: 0.9;
 }
 
 .sidebar-contact span, 
@@ -52,8 +59,9 @@ social: false
 }
 
 .sidebar-contact a {
+  font-weight: 500;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.15s ease-in-out;
 }
 
 .sidebar-contact a:hover {
