@@ -73,6 +73,17 @@
   color: var(--global-text-color, #333);
 }
 
+/* Force dark card backgrounds in dark mode so light text stays legible */
+html[data-theme='dark'] .highlight-card {
+  background: #2c2c2e !important;
+  border-color: #3a3a3c !important;
+  border-left: 3px solid var(--global-theme-color, #007bff) !important;
+}
+
+html[data-theme='dark'] .highlight-card p {
+  color: #ffffff !important;
+}
+
 .bio-lead {
   font-size: 1.05rem;
   line-height: 1.65;
