@@ -62,9 +62,9 @@ nav_order: 4
 
 .media-nav-link:hover,
 .media-nav-link.active {
-  color: #d63384 !important; /* Active accent color */
-  border-left-color: #d63384;
-  background-color: var(--global-hover-bg, rgba(214, 51, 132, 0.05));
+  color: var(--global-theme-color, #007bff) !important;
+  border-left-color: var(--global-theme-color, #007bff);
+  background-color: var(--global-hover-bg, rgba(0, 123, 255, 0.05));
   font-weight: 600;
 }
 
@@ -77,13 +77,13 @@ nav_order: 4
 /* Media Sections */
 .media-section {
   margin-bottom: 3rem;
-  scroll-margin-top: 100px; /* Offset for header when clicking smooth links */
+  scroll-margin-top: 100px;
 }
 
 .media-section-header {
   font-size: 1.35rem;
   font-weight: 700;
-  color: #d63384;
+  color: var(--global-theme-color, #007bff);
   padding-bottom: 0.5rem;
   margin-bottom: 1.25rem;
   border-bottom: 2px solid var(--global-divider-color, #e2e8f0);
@@ -295,6 +295,90 @@ html[data-theme='dark'] .media-description {
         <i class="fa-solid fa-newspaper"></i> 2. International &amp; Major Print Press
       </h2>
       <div class="media-grid">
+
+        <a href="https://www.smithsonianmag.com/smart-news/you-can-tell-how-athletes-doing-their-body-language-180949886/" target="_blank" rel="noopener noreferrer" class="media-card">
+          <div class="media-thumb-container">
+            <img src="https://img.logo.dev/smithsonianmag.com?token=pk_X1-Y3111T-29_7-1111111" alt="Smithsonian Magazine" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <i class="fa-solid fa-user-check media-thumb-placeholder" style="display:none;"></i>
+          </div>
+          <div class="media-body">
+            <div class="media-outlet">Smithsonian Magazine</div>
+            <div class="media-title">You Can Tell How Athletes Are Doing by Their Body Language</div>
+            <p class="media-description">Feature coverage on nonverbal research showing how brief, thin-slice observations of body posture and nonverbal cues accurately reveal whether athletes are winning or losing.</p>
+          </div>
+        </a>
+
+        <a href="https://www.bps.org.uk/research-digest/no-need-look-score-athletes-body-language-gives-away-whos-winning-and-losing" target="_blank" rel="noopener noreferrer" class="media-card">
+          <div class="media-thumb-container">
+            <img src="https://img.logo.dev/bps.org.uk?token=pk_X1-Y3111T-29_7-1111111" alt="BPS Research Digest" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <i class="fa-solid fa-brain media-thumb-placeholder" style="display:none;"></i>
+          </div>
+          <div class="media-body">
+            <div class="media-outlet">BPS Research Digest</div>
+            <div class="media-title">No Need to Look at the Score: Athletes' Body Language Gives Away Who's Winning and Losing</div>
+            <p class="media-description">Research Digest feature on thin-slice studies demonstrating how observers reliably decode outcome status, pride, and shame from nonverbal behavior.</p>
+          </div>
+        </a>
+
+        <a href="https://www.bbc.com/sport/football/52553088" target="_blank" rel="noopener noreferrer" class="media-card">
+          <div class="media-thumb-container">
+            <img src="https://img.logo.dev/bbc.com?token=pk_X1-Y3111T-29_7-1111111" alt="BBC Sport" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <i class="fa-solid fa-futbol media-thumb-placeholder" style="display:none;"></i>
+          </div>
+          <div class="media-body">
+            <div class="media-outlet">BBC Sport • May 2020</div>
+            <div class="media-title">Penalty Shootouts: Are English Players &amp; Goalkeepers Really Cursed?</div>
+            <p class="media-description">Feature analyzing empirical data debunking historical myths regarding English penalty kick performance and goalkeeper save success rates.</p>
+          </div>
+        </a>
+
+        <a href="http://bodylanguageproject.com/articles/interview-dr-philip-furley/" target="_blank" rel="noopener noreferrer" class="media-card">
+          <div class="media-thumb-container">
+            <img src="https://img.logo.dev/bodylanguageproject.com?token=pk_X1-Y3111T-29_7-1111111" alt="The Body Language Project" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <i class="fa-solid fa-comments media-thumb-placeholder" style="display:none;"></i>
+          </div>
+          <div class="media-body">
+            <div class="media-outlet">The Body Language Project</div>
+            <div class="media-title">Expert Interview: Dr. Philip Furley on Nonverbal Behavior in Sport</div>
+            <p class="media-description">Extended Q&amp;A interview discussing person perception, body language cues, pride and shame expressions, and referee impression formation.</p>
+          </div>
+        </a>
+
+        <a href="https://www.theinertia.com/surf/this-study-analyzed-over-4000-world-tour-waves-to-see-if-surfers-really-do-perform-better-on-their-frontside/" target="_blank" rel="noopener noreferrer" class="media-card">
+          <div class="media-thumb-container">
+            <img src="https://img.logo.dev/theinertia.com?token=pk_X1-Y3111T-29_7-1111111" alt="The Inertia" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <i class="fa-solid fa-water media-thumb-placeholder" style="display:none;"></i>
+          </div>
+          <div class="media-body">
+            <div class="media-outlet">The Inertia</div>
+            <div class="media-title">Do Surfers Really Perform Better on Their Frontside?</div>
+            <p class="media-description">Feature analyzing research on laterality, stance preferences (goofy vs. regular), and frontside vs. backside scoring metrics across WSL World Tour waves.</p>
+          </div>
+        </a>
+
+        <a href="https://www.surfertoday.com/surfing/claims-in-surfing-influence-judging-scores" target="_blank" rel="noopener noreferrer" class="media-card">
+          <div class="media-thumb-container">
+            <img src="https://img.logo.dev/surfertoday.com?token=pk_X1-Y3111T-29_7-1111111" alt="SurferToday" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <i class="fa-solid fa-water media-thumb-placeholder" style="display:none;"></i>
+          </div>
+          <div class="media-body">
+            <div class="media-outlet">SurferToday • Jan 2020</div>
+            <div class="media-title">Claims in Surfing Influence Judging Scores</div>
+            <p class="media-description">Feature reporting on empirical findings demonstrating how nonverbal emotional post-performance expressions (claims) bias surf judges' scores.</p>
+          </div>
+        </a>
+
+        <a href="https://www.bbc.com/news/science-environment-59814372" target="_blank" rel="noopener noreferrer" class="media-card">
+          <div class="media-thumb-container">
+            <img src="https://img.logo.dev/bbc.com?token=pk_X1-Y3111T-29_7-1111111" alt="BBC News" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <i class="fa-solid fa-shirt media-thumb-placeholder" style="display:none;"></i>
+          </div>
+          <div class="media-body">
+            <div class="media-outlet">BBC News • Science &amp; Environment</div>
+            <div class="media-title">Why Red Shirts Don't Guarantee Sporting Success</div>
+            <p class="media-description">Feature on psychological color studies evaluating whether wearing red jerseys provides a performance advantage in sports.</p>
+          </div>
+        </a>
 
         <a href="https://www.nytimes.com/athletic/7090564/2026/03/06/kevin-durant-caleb-williams-body-language-expert/" target="_blank" rel="noopener noreferrer" class="media-card">
           <div class="media-thumb-container">
