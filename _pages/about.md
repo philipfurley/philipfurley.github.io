@@ -139,6 +139,10 @@ html[data-theme='dark'] .highlight-card p {
     <h4><i class="fa-solid fa-flask"></i> Primary Funding</h4>
     <p>German Research Foundation (DFG)</p>
   </div>
+  <div class="highlight-card">
+    <h4><i class="fa-solid fa-brain"></i> Field</h4>
+    <p>Psychology &amp; Sport Science</p>
+  </div>
 </div>
 
 <p>My research program advances our understanding of human emotion, nonverbal expressions, visual attention, and cognitive functioning under high pressure. A cornerstone of my work is the application of an <em>in situ</em> ethological approach within the rich, ecologically valid context of competitive sport.</p>
