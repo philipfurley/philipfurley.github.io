@@ -108,6 +108,35 @@
   margin-bottom: 0.75rem;
 }
 
+/* Dark Mode Overrides for High Contrast */
+html[data-theme='dark'] .strand-card,
+html[data-theme='dark'] .research-sidebar {
+  background: #2c2c2e !important;
+  border-color: #3a3a3c !important;
+}
+
+html[data-theme='dark'] .strand-card {
+  border-left: 1px solid #3a3a3c !important;
+}
+
+html[data-theme='dark'] .research-sidebar {
+  border-left: 3px solid var(--global-theme-color, #007bff) !important;
+}
+
+html[data-theme='dark'] .strand-card .strand-lead,
+html[data-theme='dark'] .strand-card p,
+html[data-theme='dark'] .research-sidebar h4,
+html[data-theme='dark'] .compact-research .title {
+  color: #ffffff !important;
+}
+
+html[data-theme='dark'] .research-sidebar a,
+html[data-theme='dark'] .strand-card h4.pub-heading,
+html[data-theme='dark'] .compact-research .author,
+html[data-theme='dark'] .compact-research .periodical {
+  color: #b0b0b5 !important;
+}
+
 /* Compact Publications Styles */
 .compact-research h2.bibliography {
   display: none !important;
