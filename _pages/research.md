@@ -260,8 +260,8 @@ html {
       <h3>1. Nonverbal Behavior, Emotion &amp; Social Perception in Sport</h3>
       <img src="{{ '/assets/img/nvbresearch.jpg' | relative_url }}" alt="Nonverbal Behavior in Sport" class="strand-img">
       <div class="strand-lead">
-        <p>This research strand investigates how human emotions and nonverbal signals are communicated, perceived, and utilized in high-pressure athletic environments. Utilizing thin-slice methodology, 3D pose analysis, and Facial Action Coding (FACS), this work explores how body language, facial expressions, and emotional displays influence expectancy of success, impression formation, and strategic interactions between opponents, teammates, and coaches.</p>
-        <p>A key objective of this domain is to bridge basic social psychology and evolutionary theory with real-world application, demonstrating how nonverbal cues reveal underlying cognitive states (such as ego depletion or confidence) and directly shape athletic performance across sports like soccer, darts, basketball, and tennis.</p>
+        <p>This research strand investigates how human emotions and nonverbal signals are communicated, perceived, and utilized in high-pressure athletic environments. Utilizing thin-slice methodology, 3D pose analysis, and body and Facial Action Coding (FACS), this work explores how body language, facial expressions, and emotional displays influence expectancy of success, impression formation, and strategic interactions between opponents, teammates, and coaches.</p>
+        <p>A key objective of this domain is to bridge basic social psychology and evolutionary theory with real-world application, demonstrating how nonverbal cues reveal underlying cognitive states (such as fatigue or confidence) and directly shape athletic performance across sports like soccer, darts, basketball, and tennis.</p>
       </div>
       
       <hr class="section-divider">
@@ -292,7 +292,7 @@ html {
       <h3>3. Evolutionary Perspectives, Biocultural Models &amp; Metascience</h3>
       <img src="{{ '/assets/img/evolutionresearch.jpg' | relative_url }}" alt="Evolutionary Perspectives and Metascience" class="strand-img">
       <div class="strand-lead">
-        <p>This interdisciplinary line uses evolutionary behavioral science to understand modern athletic competition as a window into human nature, physical play, and competitive signaling. Topics range from biocultural frameworks of play to evolutionary hypotheses explaining home ground territoriality and relative age effects in talent identification.</p>
+        <p>This interdisciplinary line uses evolutionary behavioral science to understand modern athletic competition as a window into human nature, physical play, and competitive signaling. Topics range from biocultural frameworks of play to evolutionary hypotheses explaining home ground territoriality.</p>
         <p>Parallel to evolutionary theory, this strand emphasizes metascience and Open Science practices within sport psychology—critically examining replication validity (e.g., color effects and aggression), statistical power, sample sizes, and the relative utility of systematic versus narrative review formats.</p>
       </div>
 
@@ -308,7 +308,7 @@ html {
       <h3>4. Sport &amp; Match Analysis</h3>
       <img src="{{ '/assets/img/penaltyresearch.jpg' | relative_url }}" alt="Match Analysis and Penalty Kicks" class="strand-img">
       <div class="strand-lead">
-        <p>Focused on elite performance analysis, this research strand applies systematic video-notational methods, spatial analytics, and psychological profiling to understand decision-making under high stakes. Major areas of inquiry include the mechanical and psychological determinants of soccer penalty kicks, home advantage phenomena, and the objectivity of match analysis data used by elite coaching staff.</p>
+        <p>Focused on elite performance analysis, this research strand applies systematic video-notational methods, spatial analytics, and relative age effects in talent identification, and psychological profiling to understand decision-making under high stakes. Major areas of inquiry include the mechanical and psychological determinants of soccer penalty kicks, home advantage phenomena, and the objectivity of match analysis data used by elite coaching staff.</p>
         <p>By evaluating parameters such as visuomotor calibration, pressure, and perceptual strategies in sports like soccer, tennis, and darts, this work bridges match data analytics with actionable insights for talent development and opponent preparation.</p>
       </div>
 
