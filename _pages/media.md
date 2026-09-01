@@ -267,6 +267,7 @@ html[data-theme='dark'] .media-description {
   Overview of major science awards, international press coverage, broadcast interviews, podcast features, and institutional press releases.
 </p>
 
+<!-- FEATURED PRESTIGIOUS MEDIA HIGHLIGHTS -->
 <div class="featured-media-box">
   <div class="featured-media-title">
     <i class="fa-solid fa-star"></i> Featured Media Highlights
@@ -300,6 +301,7 @@ html[data-theme='dark'] .media-description {
 
 <div class="media-layout-container">
 
+  <!-- SIDEBAR NAVIGATION -->
   <aside class="media-sidebar">
     <div class="media-sidebar-title">Media Categories</div>
     <ul class="media-nav-list">
@@ -310,8 +312,10 @@ html[data-theme='dark'] .media-description {
     </ul>
   </aside>
 
+  <!-- MAIN MEDIA CONTENT -->
   <main class="media-content-area">
 
+    <!-- CATEGORY 1: MAJOR SCIENCE AWARDS -->
     <section id="awards" class="media-section">
       <h2 class="media-section-header">
         <i class="fa-solid fa-trophy"></i> 1. Major Science Awards &amp; Honors
@@ -370,6 +374,7 @@ html[data-theme='dark'] .media-description {
       </div>
     </section>
 
+    <!-- CATEGORY 2: INTERNATIONAL & MAJOR PRINT PRESS -->
     <section id="print-press" class="media-section">
       <h2 class="media-section-header">
         <i class="fa-solid fa-newspaper"></i> 2. International &amp; Major Print Press
@@ -562,6 +567,7 @@ html[data-theme='dark'] .media-description {
       </div>
     </section>
 
+    <!-- CATEGORY 3: BROADCAST, RADIO & PODCASTS -->
     <section id="broadcast" class="media-section">
       <h2 class="media-section-header">
         <i class="fa-solid fa-podcast"></i> 3. Broadcast, Radio &amp; Podcasts
@@ -609,6 +615,7 @@ html[data-theme='dark'] .media-description {
       </div>
     </section>
 
+    <!-- CATEGORY 4: INSTITUTIONAL MEDIA DIRECTORY -->
     <section id="directory" class="media-section">
       <h2 class="media-section-header">
         <i class="fa-solid fa-building-columns"></i> 4. Institutional Media Directory
@@ -627,17 +634,6 @@ html[data-theme='dark'] .media-description {
             </div>
           </a>
 
-          <a href="https://fis.dshs-koeln.de/de/persons/philip-furley/" target="_blank" rel="noopener noreferrer" class="media-card">
-            <div class="media-thumb-container">
-              <i class="fa-solid fa-shirt media-thumb-placeholder"></i>
-            </div>
-            <div class="media-body">
-              <div class="media-outlet">DSHS Media Directory • Oct 2021</div>
-              <div class="media-title">Red Shirt Color Has No Effect on Winning in European Soccer</div>
-              <p class="media-description">Institutional summary on empirical multi-league tests rejecting psychological color bias advantages.</p>
-            </div>
-          </a>
-
           <a href="https://idw-online.de/de/news746969" target="_blank" rel="noopener noreferrer" class="media-card">
             <div class="media-thumb-container">
               <img src="https://img.logo.dev/idw-online.de?token=pk_X1-Y3111T-29_7-1111111" alt="idw-online" class="media-thumb" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
@@ -647,6 +643,17 @@ html[data-theme='dark'] .media-description {
               <div class="media-outlet">DSHS Media Directory • May 2021</div>
               <div class="media-title">English Goalkeepers and the Penalty Curse Re-examined</div>
               <p class="media-description">Re-evaluating historical penalty performance myths and goalkeeper success probabilities across major tournaments.</p>
+            </div>
+          </a>
+
+          <a href="https://fis.dshs-koeln.de/de/persons/philip-furley/" target="_blank" rel="noopener noreferrer" class="media-card">
+            <div class="media-thumb-container">
+              <i class="fa-solid fa-shirt media-thumb-placeholder"></i>
+            </div>
+            <div class="media-body">
+              <div class="media-outlet">DSHS Media Directory • Oct 2021</div>
+              <div class="media-title">Red Shirt Color Has No Effect on Winning in European Soccer</div>
+              <p class="media-description">Institutional summary on empirical multi-league tests rejecting psychological color bias advantage.</p>
             </div>
           </a>
 
@@ -669,6 +676,7 @@ html[data-theme='dark'] .media-description {
   </main>
 </div>
 
+<!-- SIDEBAR NAVIGATION & SHOW MORE/LESS TOGGLE SCRIPT -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   /* Scroll Active Link Logic */
@@ -687,15 +695,15 @@ document.addEventListener("DOMContentLoaded", function() {
   changeActiveLink();
   window.addEventListener("scroll", changeActiveLink);
 
-  /* Expandable Show More/Fewer Cards Logic */
+  /* Expandable Show More/Fewer Cards Logic (Top 2 Shown Initially) */
   const wrappers = document.querySelectorAll(".media-wrapper");
   wrappers.forEach(function (wrapper) {
     const cards = wrapper.querySelectorAll(".media-grid > .media-card");
-    if (cards.length <= 3) {
+    if (cards.length <= 2) {
       const btn = wrapper.querySelector(".media-toggle-btn");
       if (btn) btn.style.display = "none";
     } else {
-      for (let i = 3; i < cards.length; i++) {
+      for (let i = 2; i < cards.length; i++) {
         cards[i].classList.add("media-hidden");
       }
     }
@@ -711,7 +719,7 @@ function toggleMedia(button) {
     hiddenCards.forEach(el => el.classList.remove("media-hidden"));
     button.textContent = "– Show fewer media coverage";
   } else {
-    for (let i = 3; i < allCards.length; i++) {
+    for (let i = 2; i < allCards.length; i++) {
       allCards[i].classList.add("media-hidden");
     }
     button.textContent = "+ Show more media coverage";
