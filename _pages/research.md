@@ -305,7 +305,7 @@ html {
     </section>
 
     <section id="strand-4" class="strand-card">
-      <h3>4. Sport Science, Match Analyses &amp; Penalty Kicks</h3>
+      <h3>4. Match Analysis</h3>
       <img src="{{ '/assets/img/penaltyresearch.jpg' | relative_url }}" alt="Match Analysis and Penalty Kicks" class="strand-img">
       <div class="strand-lead">
         <p>Focused on elite performance analysis, this research strand applies systematic video-notational methods, spatial analytics, and psychological profiling to understand decision-making under high stakes. Major areas of inquiry include the mechanical and psychological determinants of soccer penalty kicks, home advantage phenomena, and the objectivity of match analysis data used by elite coaching staff.</p>
