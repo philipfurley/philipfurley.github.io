@@ -248,7 +248,7 @@ html {
       <li><a href="#strand-1">1. Nonverbal Behavior</a></li>
       <li><a href="#strand-2">2. Executive Functions</a></li>
       <li><a href="#strand-3">3. Metascience &amp; Evolution</a></li>
-      <li><a href="#strand-4">4. Sport Science and Match Analysis</a></li>
+      <li><a href="#strand-4">4. Sport &amp; Match Analysis</a></li>
       <li><a href="#strand-5">5. Surf Science</a></li>
     </ul>
   </nav>
@@ -292,7 +292,7 @@ html {
       <h3>3. Evolutionary Perspectives, Biocultural Models &amp; Metascience</h3>
       <img src="{{ '/assets/img/evolutionresearch.jpg' | relative_url }}" alt="Evolutionary Perspectives and Metascience" class="strand-img">
       <div class="strand-lead">
-        <p>This interdisciplinary line uses evolutionary behavioral science to understand modern athletic competition as a window into human nature, physical play, and competitive signaling. Topics range from biocultural frameworks of play to evolutionary hypotheses explaining home ground territoriality.</p>
+        <p>This interdisciplinary line uses evolutionary behavioral science to understand modern athletic competition as a window into human nature, physical play, and competitive signaling. Topics range from biocultural frameworks of play to evolutionary hypotheses explaining home ground territoriality and relative age effects in talent identification.</p>
         <p>Parallel to evolutionary theory, this strand emphasizes metascience and Open Science practices within sport psychology—critically examining replication validity (e.g., color effects and aggression), statistical power, sample sizes, and the relative utility of systematic versus narrative review formats.</p>
       </div>
 
@@ -305,10 +305,10 @@ html {
     </section>
 
     <section id="strand-4" class="strand-card">
-      <h3>4. Sport Science and Match Analysis</h3>
+      <h3>4. Sport &amp; Match Analysis</h3>
       <img src="{{ '/assets/img/penaltyresearch.jpg' | relative_url }}" alt="Match Analysis and Penalty Kicks" class="strand-img">
       <div class="strand-lead">
-        <p>Focused on elite performance analysis, this research strand applies systematic video-notational methods, spatial analytics, and psychological profiling to understand decision-making under high stakes. Major areas of inquiry include the mechanical and psychological determinants of soccer penalty kicks, home advantage phenomena, the relative age effect, and the objectivity of match analysis data used by elite coaching staff.</p>
+        <p>Focused on elite performance analysis, this research strand applies systematic video-notational methods, spatial analytics, and psychological profiling to understand decision-making under high stakes. Major areas of inquiry include the mechanical and psychological determinants of soccer penalty kicks, home advantage phenomena, and the objectivity of match analysis data used by elite coaching staff.</p>
         <p>By evaluating parameters such as visuomotor calibration, pressure, and perceptual strategies in sports like soccer, tennis, and darts, this work bridges match data analytics with actionable insights for talent development and opponent preparation.</p>
       </div>
 
