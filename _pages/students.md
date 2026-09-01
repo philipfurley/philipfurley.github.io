@@ -51,13 +51,25 @@ nav_order: 3
   gap: 10px;
 }
 
+/* Fully Displayed Image Frame */
+.student-card .card-img-container {
+  width: 100%;
+  background: var(--global-hover-bg, #f8f9fa);
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .student-card .card-img {
   width: 100%;
-  max-height: 360px;
-  object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  margin-bottom: 1.5rem;
+  height: auto;
+  max-height: 480px;
+  object-fit: contain; /* Ensures complete image is visible without cropping */
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
 }
 
 .student-card .card-text {
@@ -67,8 +79,8 @@ nav_order: 3
 }
 
 .student-card ul {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
   padding-left: 1.25rem;
 }
 
@@ -89,17 +101,60 @@ nav_order: 3
   background: var(--global-card-bg, #f1f5f9);
   border-radius: 6px;
   padding: 1.25rem;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
   font-size: 0.9rem;
   line-height: 1.5;
 }
 
-/* Dark Mode High-Contrast Overrides */
+/* Neat Contact Info Box */
+.contact-details-box {
+  background: var(--global-hover-bg, rgba(0, 123, 255, 0.04));
+  border: 1px solid var(--global-divider-color, #e2e8f0);
+  border-radius: 6px;
+  padding: 1.25rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--global-text-color, #222);
+}
+
+.contact-detail-item i {
+  font-size: 1.1rem;
+  color: var(--global-theme-color, #007bff);
+  width: 20px;
+  text-align: center;
+}
+
+.contact-detail-item a {
+  color: var(--global-theme-color, #007bff);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-detail-item a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode Overrides */
 html[data-theme='dark'] .students-lead-box,
 html[data-theme='dark'] .student-card,
-html[data-theme='dark'] .contact-callout {
+html[data-theme='dark'] .contact-callout,
+html[data-theme='dark'] .contact-details-box {
   background: #2c2c2e !important;
   border-color: #3a3a3c !important;
+}
+
+html[data-theme='dark'] .student-card .card-img-container {
+  background: #1c1c1e !important;
 }
 
 html[data-theme='dark'] .students-lead-box {
@@ -113,6 +168,7 @@ html[data-theme='dark'] .phd-card {
 html[data-theme='dark'] .student-card h3,
 html[data-theme='dark'] .card-text,
 html[data-theme='dark'] li,
+html[data-theme='dark'] .contact-detail-item,
 html[data-theme='dark'] .students-lead-box p {
   color: #ffffff !important;
 }
@@ -133,7 +189,9 @@ html[data-theme='dark'] .students-lead-box p {
       <i class="fa-solid fa-fire"></i> Primary Thesis Topic: Nonverbal Behavior, Emotion &amp; Social Perception
     </h3>
     
-    <img src="{{ '/assets/img/nvbresearch.jpg' | relative_url }}" alt="Nonverbal Behavior in Sport Research" class="card-img">
+    <div class="card-img-container">
+      <img src="{{ '/assets/img/nvbresearch.jpg' | relative_url }}" alt="Nonverbal Behavior in Sport Research" class="card-img">
+    </div>
 
     <div class="card-text">
       <p>
@@ -159,21 +217,16 @@ html[data-theme='dark'] .students-lead-box p {
   <!-- SECONDARY TOPICS: BA & MA -->
   <section class="student-card">
     <h3>
-      <i class="fa-solid fa-lightbulb"></i> Alternative BA &amp; MA Thesis Topics
+      <i class="fa-solid fa-lightbulb"></i> Alternative BA &amp; MA Thesis Options
     </h3>
     <div class="card-text">
       <p>
-        While nonverbal behavior is our primary supervision line, I occasionally accept exceptional Bachelor's and Master's students interested in exploring topics across our broader research strands:
+        While nonverbal behavior is our primary supervision line, I occasionally accept exceptional Bachelor's and Master's students for alternative project formats:
       </p>
       <ul>
-        <li><strong>Executive Functions &amp; Cognitive Load:</strong> Visual attention, working memory capacity, and decision-making under high cognitive strain or fatigue.</li>
-        <li><strong>Sport &amp; Match Analysis:</strong> Notational video methods, spatial data, and psychological determinants of penalty shootouts.</li>
-        <li><strong>Evolutionary Sports Psychology &amp; Metascience:</strong> Biocultural models of physical play, territoriality, or critical evaluations of Open Science practices and replication validity.</li>
-        <li><strong>Surf Science &amp; Action Sports:</strong> Laterality, motor asymmetry, and judging biases in surfing.</li>
+        <li><strong>Broader Research Strands:</strong> Selected topics in executive functions, match analysis, evolutionary sports psychology, or surf science.</li>
+        <li><strong>Self-Chosen Topics &amp; Applied PE Research:</strong> Have a specific idea? I welcome self-proposed projects—particularly applied empirical topics relevant to prospective Physical Education (PE / Lehramt) teachers and school sports.</li>
       </ul>
-      <p>
-        If you have a strong, self-motivated research question aligned with one of these areas, feel free to pitch your proposal!
-      </p>
     </div>
   </section>
 
@@ -197,21 +250,30 @@ html[data-theme='dark'] .students-lead-box p {
     </div>
   </section>
 
-  <!-- HOW TO APPLY -->
+  <!-- HOW TO APPLY & CONTACT INFO -->
   <section class="student-card">
     <h3>
       <i class="fa-solid fa-paper-plane"></i> How to Inquire &amp; Apply
     </h3>
     <div class="card-text">
       <p>
-        If you are interested in pursuing a thesis or PhD research under my supervision, please send a concise email including:
+        If you are interested in pursuing a thesis or PhD research under my supervision, please send a concise inquiry including your research interests, current transcript, and CV.
       </p>
-      <ul>
-        <li>A brief statement outlining your research interests and preferred strand.</li>
-        <li>Your current academic transcript (grades and coursework).</li>
-        <li>Your CV / Resume.</li>
-        <li><em>(For PhD candidates):</em> A brief 1–2 page research sketch and information regarding prospective funding sources.</li>
-      </ul>
+      
+      <div class="contact-details-box">
+        <div class="contact-detail-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email: <a href="mailto:p.furley@dshs-koeln.de">p.furley@dshs-koeln.de</a></span>
+        </div>
+        <div class="contact-detail-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>Phone: <a href="tel:+4922149824211">+49 (0)221 4982-4211</a></span>
+        </div>
+        <div class="contact-detail-item">
+          <i class="fa-solid fa-building-columns"></i>
+          <span>Institute of Exercise Training and Sport Informatics, German Sport University Cologne</span>
+        </div>
+      </div>
     </div>
   </section>
 
