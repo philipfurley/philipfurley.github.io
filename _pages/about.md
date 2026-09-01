@@ -129,7 +129,7 @@ html[data-theme='dark'] .highlight-card p {
 <div class="about-highlights">
   <div class="highlight-card">
     <h4><i class="fa-solid fa-user-graduate"></i> Academic Rank</h4>
-    <p>Privatdozent (PD Dr.) &amp; Senior Lecturer</p>
+    <p>Professor Doctor (PD Dr.)</p>
   </div>
   <div class="highlight-card">
     <h4><i class="fa-solid fa-trophy"></i> Recognition</h4>
