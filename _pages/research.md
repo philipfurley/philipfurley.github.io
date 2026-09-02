@@ -68,6 +68,8 @@ nav_order: 2
   padding: 1.75rem;
   margin-bottom: 2.5rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .strand-card h3 {
@@ -140,7 +142,12 @@ html[data-theme='dark'] .compact-research .periodical {
   color: #b0b0b5 !important;
 }
 
-/* Compact Publications Styles */
+/* Compact Publications Styles & Full-Width Integration */
+.pub-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .compact-research h2.bibliography {
   display: none !important;
 }
@@ -149,20 +156,75 @@ html[data-theme='dark'] .compact-research .periodical {
   list-style-type: none !important;
   padding-left: 0 !important;
   margin-left: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 .compact-research ol.bibliography > li {
   list-style: none !important;
   padding-left: 0 !important;
-  font-size: 0.78rem !important;
-  line-height: 1.35 !important;
-  margin-bottom: 0.6rem !important;
-  padding-bottom: 0.5rem !important;
+  margin-left: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  font-size: 0.80rem !important;
+  line-height: 1.4 !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.8rem !important;
   border-bottom: 1px dashed var(--global-divider-color, #eee);
+  
+  /* Flexbox arrangement to keep Title -> Meta -> PDF structured */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
 }
 
 .compact-research ol.bibliography > li:last-child {
   border-bottom: none;
+  margin-bottom: 0 !important;
+}
+
+/* Title Styling */
+.compact-research .title {
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  color: var(--global-text-color, #222) !important;
+  display: block !important;
+  margin-bottom: 0.2rem !important;
+  line-height: 1.35 !important;
+  width: 100% !important;
+}
+
+/* Author and Journal Metadata */
+.compact-research .author, 
+.compact-research .periodical {
+  font-size: 0.78rem !important;
+  color: var(--global-text-color-light, #555) !important;
+  display: block !important;
+  line-height: 1.35 !important;
+  margin-bottom: 0.35rem !important;
+  width: 100% !important;
+}
+
+/* PDF Links and Button Alignment */
+.compact-research .links {
+  display: flex !important;
+  align-items: center !important;
+  margin-top: 0.1rem !important;
+  width: 100% !important;
+}
+
+.compact-research .links a.btn:not([href*=".pdf"]) {
+  display: none !important;
+}
+
+.compact-research .links a.btn[href*=".pdf"] {
+  font-size: 0.68rem !important;
+  padding: 2px 8px !important;
+  border-radius: 3px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  display: inline-block !important;
+  margin-top: 0.15rem !important;
 }
 
 /* Hidden elements class */
@@ -191,31 +253,6 @@ html[data-theme='dark'] .compact-research .periodical {
 /* Hide "Chapter" / Type Badges (.abbr) */
 .compact-research .abbr {
   display: none !important;
-}
-
-/* Compact PDF Buttons */
-.compact-research .links a.btn:not([href*=".pdf"]) {
-  display: none !important;
-}
-
-.compact-research .links a.btn[href*=".pdf"] {
-  font-size: 0.68rem !important;
-  padding: 1px 6px !important;
-  border-radius: 3px !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.5px !important;
-}
-
-.compact-research .title {
-  font-size: 0.82rem !important;
-  font-weight: 600 !important;
-  color: var(--global-text-color, #222) !important;
-}
-
-.compact-research .author, 
-.compact-research .periodical {
-  font-size: 0.75rem !important;
-  color: var(--global-text-color-light, #555) !important;
 }
 
 /* Responsive adjustment for small screens */
