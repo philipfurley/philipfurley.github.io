@@ -68,8 +68,8 @@ nav_order: 2
   padding: 1.75rem;
   margin-bottom: 2.5rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-  width: 100%;
-  box-sizing: border-box;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 .strand-card h3 {
@@ -142,10 +142,10 @@ html[data-theme='dark'] .compact-research .periodical {
   color: #b0b0b5 !important;
 }
 
-/* Compact Publications Styles & Full-Width Integration */
+/* Force Bibliography Overrides against al-folio theme defaults */
 .pub-wrapper {
-  width: 100%;
-  box-sizing: border-box;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 .compact-research h2.bibliography {
@@ -160,6 +160,7 @@ html[data-theme='dark'] .compact-research .periodical {
   box-sizing: border-box !important;
 }
 
+/* Reset al-folio row flex/grid layouts on list items */
 .compact-research ol.bibliography > li {
   list-style: none !important;
   padding-left: 0 !important;
@@ -168,33 +169,47 @@ html[data-theme='dark'] .compact-research .periodical {
   box-sizing: border-box !important;
   font-size: 0.80rem !important;
   line-height: 1.4 !important;
-  margin-bottom: 1rem !important;
+  margin-bottom: 1.2rem !important;
   padding-bottom: 0.8rem !important;
-  border-bottom: 1px dashed var(--global-divider-color, #eee);
+  border-bottom: 1px dashed var(--global-divider-color, #eee) !important;
   
-  /* Flexbox arrangement to keep Title -> Meta -> PDF structured */
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
+  display: block !important;
+  float: none !important;
 }
 
 .compact-research ol.bibliography > li:last-child {
-  border-bottom: none;
+  border-bottom: none !important;
   margin-bottom: 0 !important;
 }
 
-/* Title Styling */
+/* Override internal al-folio .row and .col-sm-* classes inside bibliography */
+.compact-research ol.bibliography .row {
+  display: block !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+}
+
+.compact-research ol.bibliography [class*="col-"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Title Block */
 .compact-research .title {
   font-size: 0.85rem !important;
   font-weight: 700 !important;
   color: var(--global-text-color, #222) !important;
   display: block !important;
-  margin-bottom: 0.2rem !important;
+  margin-bottom: 0.25rem !important;
   line-height: 1.35 !important;
   width: 100% !important;
 }
 
-/* Author and Journal Metadata */
+/* Authors and Periodicals */
 .compact-research .author, 
 .compact-research .periodical {
   font-size: 0.78rem !important;
@@ -205,11 +220,10 @@ html[data-theme='dark'] .compact-research .periodical {
   width: 100% !important;
 }
 
-/* PDF Links and Button Alignment */
+/* PDF Links Container directly underneath metadata */
 .compact-research .links {
-  display: flex !important;
-  align-items: center !important;
-  margin-top: 0.1rem !important;
+  display: block !important;
+  margin-top: 0.4rem !important;
   width: 100% !important;
 }
 
@@ -224,7 +238,6 @@ html[data-theme='dark'] .compact-research .periodical {
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
   display: inline-block !important;
-  margin-top: 0.15rem !important;
 }
 
 /* Hidden elements class */
