@@ -160,7 +160,7 @@ html[data-theme='dark'] .compact-research .periodical {
   box-sizing: border-box !important;
 }
 
-/* Reset al-folio row flex/grid layouts on list items */
+/* Reset list item container */
 .compact-research ol.bibliography > li {
   list-style: none !important;
   padding-left: 0 !important;
@@ -169,10 +169,9 @@ html[data-theme='dark'] .compact-research .periodical {
   box-sizing: border-box !important;
   font-size: 0.80rem !important;
   line-height: 1.4 !important;
-  margin-bottom: 1.2rem !important;
-  padding-bottom: 0.8rem !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.75rem !important;
   border-bottom: 1px dashed var(--global-divider-color, #eee) !important;
-  
   display: block !important;
   float: none !important;
 }
@@ -182,7 +181,7 @@ html[data-theme='dark'] .compact-research .periodical {
   margin-bottom: 0 !important;
 }
 
-/* Override internal al-folio .row and .col-sm-* classes inside bibliography */
+/* Override internal al-folio grid inside bibliography */
 .compact-research ol.bibliography .row {
   display: block !important;
   margin-left: 0 !important;
@@ -198,33 +197,39 @@ html[data-theme='dark'] .compact-research .periodical {
   padding-right: 0 !important;
 }
 
-/* Title Block */
+/* Title Block: Distinct Top Line */
 .compact-research .title {
   font-size: 0.85rem !important;
   font-weight: 700 !important;
   color: var(--global-text-color, #222) !important;
   display: block !important;
-  margin-bottom: 0.25rem !important;
+  margin-bottom: 0.15rem !important;
   line-height: 1.35 !important;
   width: 100% !important;
 }
 
-/* Authors and Periodicals */
-.compact-research .author, 
-.compact-research .periodical {
+/* Author Line */
+.compact-research .author {
   font-size: 0.78rem !important;
   color: var(--global-text-color-light, #555) !important;
   display: block !important;
   line-height: 1.35 !important;
-  margin-bottom: 0.35rem !important;
-  width: 100% !important;
+  margin-bottom: 0.15rem !important;
 }
 
-/* PDF Links Container directly underneath metadata */
+/* Periodical and Inline PDF Container */
+.compact-research .periodical {
+  font-size: 0.78rem !important;
+  color: var(--global-text-color-light, #555) !important;
+  display: inline !important;
+  line-height: 1.35 !important;
+}
+
 .compact-research .links {
-  display: block !important;
-  margin-top: 0.4rem !important;
-  width: 100% !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  vertical-align: middle !important;
+  margin-left: 6px !important;
 }
 
 .compact-research .links a.btn:not([href*=".pdf"]) {
@@ -232,12 +237,14 @@ html[data-theme='dark'] .compact-research .periodical {
 }
 
 .compact-research .links a.btn[href*=".pdf"] {
-  font-size: 0.68rem !important;
-  padding: 2px 8px !important;
+  font-size: 0.65rem !important;
+  padding: 1px 5px !important;
   border-radius: 3px !important;
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
   display: inline-block !important;
+  line-height: 1.2 !important;
+  vertical-align: middle !important;
 }
 
 /* Hidden elements class */
