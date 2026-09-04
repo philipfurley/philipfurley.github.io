@@ -317,7 +317,7 @@ html {
       <h3>1. Nonverbal Behavior, Emotion &amp; Social Perception in Sport</h3>
       <img src="{{ '/assets/img/nvbresearch.jpg' | relative_url }}" alt="Nonverbal Behavior in Sport" class="strand-img">
       <div class="strand-lead">
-        <p>This research strand investigates how human emotions and nonverbal signals are communicated, perceived, and utilized in high-pressure athletic environments. Utilizing thin-slice methodology, 3D pose analysis, and body and Facial Action Coding (FACS), this work explores how body language, facial expressions, and emotional displays influence expectancy of success, impression formation, and strategic interactions between opponents, teammates, and coaches.</p>
+        <p>This DFG funded research strand investigates how human emotions and nonverbal signals are communicated, perceived, and utilized in high-pressure athletic environments. Utilizing thin-slice methodology, 3D pose analysis, and body and Facial Action Coding (FACS), this work explores how body language, facial expressions, and emotional displays influence expectancy of success, impression formation, and strategic interactions between opponents, teammates, and coaches.</p>
         <p>A key objective of this domain is to bridge basic social psychology and evolutionary theory with real-world application, demonstrating how nonverbal cues reveal underlying cognitive states (such as fatigue or confidence) and directly shape athletic performance across sports like soccer, darts, basketball, and tennis.</p>
       </div>
       
