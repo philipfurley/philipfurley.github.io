@@ -190,7 +190,7 @@ html[data-theme='dark'] .students-lead-box p {
     </h3>
     
     <div class="card-img-container">
-      <img src="{{ '/assets/img/nvbresearch.jpg' | relative_url }}" alt="Nonverbal Behavior in Sport Research" class="card-img">
+      <img src="{{ '/assets/img/nvbresearch-v2.jpg' | relative_url }}" alt="Nonverbal Behavior in Sport Research" class="card-img">
     </div>
 
     <div class="card-text">
