@@ -315,7 +315,7 @@ html {
 
     <section id="strand-1" class="strand-card">
       <h3>1. Nonverbal Behavior, Emotion &amp; Social Perception in Sport</h3>
-      <img src="{{ '/assets/img/nvbresearch.jpg' | relative_url }}" alt="Nonverbal Behavior in Sport" class="strand-img">
+      <img src="{{ '/assets/img/nvbresearch-v2.jpg' | relative_url }}" alt="Nonverbal Behavior in Sport" class="strand-img">
       <div class="strand-lead">
         <p>This DFG funded research strand investigates how human emotions and nonverbal signals are communicated, perceived, and utilized in high-pressure athletic environments. Utilizing thin-slice methodology, 3D pose analysis, and body and Facial Action Coding (FACS), this work explores how body language, facial expressions, and emotional displays influence expectancy of success, impression formation, and strategic interactions between opponents, teammates, and coaches.</p>
         <p>A key objective of this domain is to bridge basic social psychology and evolutionary theory with real-world application, demonstrating how nonverbal cues reveal underlying cognitive states (such as fatigue or confidence) and directly shape athletic performance across sports like soccer, darts, basketball, and tennis.</p>
@@ -331,7 +331,7 @@ html {
 
     <section id="strand-2" class="strand-card">
       <h3>2. Executive Functions, Attention &amp; Cognitive Load</h3>
-      <img src="{{ '/assets/img/attentionresearch.jpg' | relative_url }}" alt="Executive Functions and Attention" class="strand-img">
+      <img src="{{ '/assets/img/attentionresearch-v2.jpg' | relative_url }}" alt="Executive Functions and Attention" class="strand-img">
       <div class="strand-lead">
         <p>This research line explores the cognitive architecture underlying elite human movement and tactical decision-making. Focusing on working memory capacity, visual attention, inattentional blindness, and dual-process models, the goal is to unravel how athletes process complex environmental stimuli while maintaining self-control under fatigue and cognitive load.</p>
         <p>Additionally, this strand examines the boundaries of cognitive transfer and ego-depletion, critically evaluating how executive control mechanisms function in high-pressure performance contexts and driving rigorous methodological standards for assessing executive function across sport science.</p>
