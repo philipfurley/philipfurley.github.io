@@ -363,7 +363,7 @@ html {
 
     <section id="strand-4" class="strand-card">
       <h3>4. Sport &amp; Match Analysis</h3>
-      <img src="{{ '/assets/img/penaltyresearch.jpg' | relative_url }}" alt="Match Analysis and Penalty Kicks" class="strand-img">
+      <img src="{{ '/assets/img/penaltyresearch-v2.jpg' | relative_url }}" alt="Match Analysis and Penalty Kicks" class="strand-img">
       <div class="strand-lead">
         <p>Focused on elite performance analysis, this research strand applies systematic video-notational methods, spatial analytics, and relative age effects in talent identification, and psychological profiling to understand decision-making under high stakes. Major areas of inquiry include the mechanical and psychological determinants of soccer penalty kicks, home advantage phenomena, and the objectivity of match analysis data used by elite coaching staff.</p>
         <p>By evaluating parameters such as visuomotor calibration, pressure, and perceptual strategies in sports like soccer, tennis, and darts, this work bridges match data analytics with actionable insights for talent development and opponent preparation.</p>
