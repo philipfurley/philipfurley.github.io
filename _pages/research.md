@@ -347,7 +347,7 @@ html {
 
     <section id="strand-3" class="strand-card">
       <h3>3. Evolutionary Perspectives, Biocultural Models &amp; Metascience</h3>
-      <img src="{{ '/assets/img/evolutionresearch.jpg' | relative_url }}" alt="Evolutionary Perspectives and Metascience" class="strand-img">
+      <img src="{{ '/assets/img/evolutionresearch-v2.jpg' | relative_url }}" alt="Evolutionary Perspectives and Metascience" class="strand-img">
       <div class="strand-lead">
         <p>This interdisciplinary line uses evolutionary behavioral science to understand modern athletic competition as a window into human nature, physical play, and competitive signaling. Topics range from biocultural frameworks of play to evolutionary hypotheses explaining home ground territoriality.</p>
         <p>Parallel to evolutionary theory, this strand emphasizes metascience and Open Science practices within sport psychology—critically examining replication validity (e.g., color effects and aggression), statistical power, sample sizes, and the relative utility of systematic versus narrative review formats.</p>
