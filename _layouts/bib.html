@@ -1,0 +1,121 @@
+<div class="row">
+  {% if site.enable_publication_badges %}
+    {% assign entry_has_altmetric_badge = false %}
+    {% if entry.altmetric and entry.altmetric != blank and entry.altmetric != "false" %}
+      {% assign entry_has_altmetric_badge = true %}
+    {% endif %}
+    {% assign entry_has_dimensions_badge = false %}
+    {% if entry.dimensions and entry.dimensions != blank and entry.dimensions != "false" %}
+      {% assign entry_has_dimensions_badge = true %}
+    {% endif %}
+    {% if entry_has_altmetric_badge or entry_has_dimensions_badge %}
+      <div class="badges">
+        {% if entry_has_altmetric_badge %}
+          <span class="altmetric-embed" data-badge-type="2" data-badge-popover="right" {% if entry.altmetric contains 'isbndb' or entry.altmetric contains 'oclc' or entry.altmetric contains 'pmid' or entry.altmetric contains 'arxiv' %}data-{% if entry.altmetric contains 'isbndb' %}isbn{% elsif entry.altmetric contains 'oclc' %}oclc{% elsif entry.altmetric contains 'pmid' %}pmid{% elsif entry.altmetric contains 'arxiv' %}arxiv{% endif %}-id="{{ entry.altmetric }}"{% else %}data-doi="{{ entry.altmetric }}"{% endif %}></span>
+        {% endif %}
+        {% if entry_has_dimensions_badge %}
+          <span class="__dimensions_badge_embed__" {% if entry.dimensions contains 'isbndb' or entry.dimensions contains 'oclc' or entry.dimensions contains 'pmid' or entry.dimensions contains 'arxiv' %}data-{% if entry.dimensions contains 'isbndb' %}isbn{% elsif entry.dimensions contains 'oclc' %}oclc{% elsif entry.dimensions contains 'pmid' %}pmid{% elsif entry.dimensions contains 'arxiv' %}arxiv{% endif %}-id="{{ entry.dimensions }}"{% else %}data-doi="{{ entry.dimensions }}"{% endif %} data-hide-zero-citations="true" data-style="small_circle" data-legend="hover-right"></span>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endif %}
+
+  <div class="col-12">
+    <!-- Title -->
+    <div class="title">{{ entry.title }}</div>
+    <!-- Author -->
+    <div class="author">
+      {% assign author_array_size = entry.author_array | size %}
+      {% assign author_array_limit = author_array_size %}
+      {% for author in entry.author_array %}
+        {% assign author_is_self = false %}
+        {% if author.last == site.scholar.last_name %}
+          {% if site.scholar.first_name contains author.first %}
+            {% assign author_is_self = true %}
+          {% endif %}
+        {% endif %}
+        {% assign coauthor_url = nil %}
+        {% if site.data.coauthors %}
+          {% for coauthor in site.data.coauthors %}
+            {% if coauthor.files contains author.last %}
+              {% assign coauthor_url = coauthor.url %}
+              break
+            {% endif %}
+          {% for link in coauthor.links %}
+            {% if link.url contains author.last %}
+              {% assign coauthor_url = link.url %}
+              break
+            {% endif %}
+          {% endfor %}
+          {% endfor %}
+        {% endif %}
+        
+        {% if forloop.length > 1 %}
+          {% if forloop.first == false %}, {% endif %}
+          {% if forloop.last and author_array_size > 1 %}and {% endif %}
+        {% endif %}
+        {% if author_is_self %}
+          <em><b>{{ author.first }} {{ author.last }}</b></em>
+        {% else %}
+          {% if coauthor_url %}
+            <a href="{{ coauthor_url }}">{{ author.first }} {{ author.last }}</a>
+          {% else %}
+            {{ author.first }} {{ author.last }}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Journal / Book title -->
+    <div class="periodical">
+      {% if entry.type == "article" %}
+        <em>{{ entry.journal }}</em>
+      {% elsif entry.type == "inproceedings" %}
+        <em>In {{ entry.booktitle }}</em>
+      {% endif %}
+      {% if entry.year %}
+        , {{ entry.year }}
+      {% endif %}
+    </div>
+
+    <!-- Links/Buttons Bar -->
+    <div class="links">
+      <!-- 1. DOI Button -->
+      {% if entry.doi %}
+        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" target="_blank">DOI</a>
+      {% endif %}
+
+      <!-- 2. Bibtex Button -->
+      {% if entry.bibtex_show %}
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      {% endif %}
+
+      <!-- 3. PDF Button (Forced to Position 3) -->
+      {% if entry.pdf %}
+        {% if entry.pdf contains '://' %}
+          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+        {% else %}
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+        {%:if}
+      {% endif %}
+
+      <!-- 4. Full Video Button -->
+      {% if entry.video_full %}
+        <a href="{{ entry.video_full }}" class="btn btn-sm z-depth-0" role="button" target="_blank">🎥 Full Video</a>
+      {% endif %}
+
+      <!-- 5. Video Teaser Button -->
+      {% if entry.video_teaser %}
+        <a href="{{ entry.video_teaser }}" class="btn btn-sm z-depth-0" role="button" target="_blank">🎬 Teaser</a>
+      {% endif %}
+    </div>
+
+    {% if entry.bibtex_show %}
+      <!-- Hidden Bibtex block -->
+      <div class="bibtex-hidden">
+        @{{ entry.type }}{{ '{' }}{{ entry.key }},
+        ...
+      </div>
+    {% endif %}
+  </div>
+</div>
