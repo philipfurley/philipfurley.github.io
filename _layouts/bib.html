@@ -78,7 +78,7 @@
       {% endif %}
     </div>
 
-    <!-- Links/Buttons Bar -->
+    <!-- Links/Buttons Bar (Ordered: DOI -> Bib -> PDF -> Full Video -> Teaser) -->
     <div class="links">
       <!-- 1. DOI Button -->
       {% if entry.doi %}
@@ -110,9 +110,10 @@
       {% endif %}
     </div>
 
+    <!-- Hidden Bibtex Drawer -->
     {% if entry.bibtex_show %}
       <div class="bibtex-hidden">
-        <highlight>{{ entry.bibtex | escape }}</highlight>
+        {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
       </div>
     {% endif %}
   </div>
