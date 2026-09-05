@@ -110,9 +110,9 @@
       {% endif %}
     </div>
 
-    <!-- Hidden Bibtex Drawer -->
+    <!-- Hidden Bibtex Drawer (collapsed by default) -->
     {% if entry.bibtex_show %}
-      <div class="bibtex-hidden">
+      <div class="bibtex-hidden" style="display: none;">
         {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
       </div>
     {% endif %}
