@@ -163,7 +163,8 @@ document.addEventListener("DOMContentLoaded", function () {
       '<div class="divider"></div>' +
       '<div class="contact-item"><i class="fa-solid fa-graduation-cap"></i><span><a href="https://scholar.google.com/citations?user=pFurley" target="_blank" rel="noopener noreferrer">Google Scholar Profile</a></span></div>' +
       '<div class="contact-item"><i class="fa-solid fa-book-open"></i><span><a href="https://www.researchgate.net/profile/Philip-Furley" target="_blank" rel="noopener noreferrer">ResearchGate Profile</a></span></div>' +
-      '<div class="contact-item"><i class="fa-solid fa-id-card"></i><span><a href="https://orcid.org/0000-0002-1230-2220" target="_blank" rel="noopener noreferrer">ORCID Profile</a></span></div>';
+      '<div class="contact-item"><i class="fa-solid fa-id-card"></i><span><a href="https://orcid.org/0000-0002-1230-2220" target="_blank" rel="noopener noreferrer">ORCID Profile</a></span></div>' +
+      '<div class="contact-item"><i class="fa-brands fa-youtube"></i><span><a href="https://www.youtube.com/@philipfurley" target="_blank" rel="noopener noreferrer">YouTube (@philipfurley)</a></span></div>';
     profile.appendChild(contactDiv);
   }
 });
