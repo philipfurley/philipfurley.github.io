@@ -112,8 +112,7 @@
 
     {% if entry.bibtex_show %}
       <div class="bibtex-hidden">
-        @{{ entry.type }}{{ '{' }}{{ entry.key }},
-        ...
+        <highlight>{{ entry.bibtex | escape }}</highlight>
       </div>
     {% endif %}
   </div>
