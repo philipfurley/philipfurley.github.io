@@ -233,7 +233,7 @@ html[data-theme='dark'] .compact-research .periodical {
   gap: 4px !important;
 }
 
-/* Hide other metadata buttons (Abstract, BibTeX, etc.) while keeping PDF and Video */
+/* Hide other metadata buttons (Abstract, BibTeX, etc.) while keeping PDF and Videos */
 .compact-research .links a.btn:not([href*=".pdf"]):not([href*="youtu"]):not([href*="youtube"]) {
   display: none !important;
 }
@@ -252,7 +252,7 @@ html[data-theme='dark'] .compact-research .periodical {
   vertical-align: middle !important;
 }
 
-/* Optional custom badge color for Video button */
+/* Custom styling for Video buttons */
 .compact-research .links a.btn[href*="youtu"],
 .compact-research .links a.btn[href*="youtube"] {
   border-color: #e62117 !important;
