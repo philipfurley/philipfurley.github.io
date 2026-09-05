@@ -214,7 +214,7 @@ html[data-theme='dark'] .compact-research .periodical {
   margin-bottom: 0.15rem !important;
 }
 
-/* Periodical and Inline PDF Container */
+/* Periodical and Inline Links Container */
 .compact-research .periodical {
   font-size: 0.78rem !important;
   color: var(--global-text-color-light, #555) !important;
@@ -227,13 +227,18 @@ html[data-theme='dark'] .compact-research .periodical {
   align-items: center !important;
   vertical-align: middle !important;
   margin-left: 6px !important;
+  gap: 4px !important;
 }
 
-.compact-research .links a.btn:not([href*=".pdf"]) {
+/* Hide other metadata buttons (Abstract, BibTeX, etc.) while keeping PDF and Video */
+.compact-research .links a.btn:not([href*=".pdf"]):not([href*="youtu"]):not([href*="youtube"]) {
   display: none !important;
 }
 
-.compact-research .links a.btn[href*=".pdf"] {
+/* Standardized styling for PDF and Video badges */
+.compact-research .links a.btn[href*=".pdf"],
+.compact-research .links a.btn[href*="youtu"],
+.compact-research .links a.btn[href*="youtube"] {
   font-size: 0.65rem !important;
   padding: 1px 5px !important;
   border-radius: 3px !important;
@@ -242,6 +247,19 @@ html[data-theme='dark'] .compact-research .periodical {
   display: inline-block !important;
   line-height: 1.2 !important;
   vertical-align: middle !important;
+}
+
+/* Optional custom badge color for Video button */
+.compact-research .links a.btn[href*="youtu"],
+.compact-research .links a.btn[href*="youtube"] {
+  border-color: #e62117 !important;
+  color: #e62117 !important;
+}
+
+.compact-research .links a.btn[href*="youtu"]:hover,
+.compact-research .links a.btn[href*="youtube"]:hover {
+  background-color: #e62117 !important;
+  color: #ffffff !important;
 }
 
 /* Hidden elements class */
