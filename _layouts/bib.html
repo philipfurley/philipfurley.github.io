@@ -41,12 +41,12 @@
               {% assign coauthor_url = coauthor.url %}
               break
             {% endif %}
-          {% for link in coauthor.links %}
-            {% if link.url contains author.last %}
-              {% assign coauthor_url = link.url %}
-              break
-            {% endif %}
-          {% endfor %}
+            {% for link in coauthor.links %}
+              {% if link.url contains author.last %}
+                {% assign coauthor_url = link.url %}
+                break
+              {% endif %}
+            {% endfor %}
           {% endfor %}
         {% endif %}
         
@@ -90,13 +90,13 @@
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
 
-      <!-- 3. PDF Button (Forced to Position 3) -->
+      <!-- 3. PDF Button -->
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
           <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
         {% else %}
           <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
-        {%:if}
+        {% endif %}
       {% endif %}
 
       <!-- 4. Full Video Button -->
@@ -111,7 +111,6 @@
     </div>
 
     {% if entry.bibtex_show %}
-      <!-- Hidden Bibtex block -->
       <div class="bibtex-hidden">
         @{{ entry.type }}{{ '{' }}{{ entry.key }},
         ...
