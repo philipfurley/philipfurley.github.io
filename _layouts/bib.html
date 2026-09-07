@@ -73,19 +73,18 @@
       {% endif %}
     </div>
 
-    <!-- Links/Buttons Bar -->
+    <!-- Links/Buttons Bar (DOI -> PDF -> Full Video -> Teaser) -->
     <div class="links">
-      <!-- 1. DOI Button -->
+      <!-- 1. Robust DOI Button (handles both raw DOIs and full URLs) -->
       {% if entry.doi %}
-        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" target="_blank">DOI</a>
+        {% if entry.doi contains '://' %}
+          <a href="{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" target="_blank">DOI</a>
+        {% else %}
+          <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" target="_blank">DOI</a>
+        {% endif %}
       {% endif %}
 
-      <!-- 2. Bibtex Button -->
-      {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-      {% endif %}
-
-      <!-- 3. PDF Button -->
+      <!-- 2. PDF Button -->
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
           <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
@@ -94,22 +93,15 @@
         {% endif %}
       {% endif %}
 
-      <!-- 4. Full Video Button -->
+      <!-- 3. Full Video Button -->
       {% if entry.video_full %}
         <a href="{{ entry.video_full }}" class="btn btn-sm z-depth-0" role="button" target="_blank">🎥 Full Video</a>
       {% endif %}
 
-      <!-- 5. Video Teaser Button -->
+      <!-- 4. Video Teaser Button -->
       {% if entry.video_teaser %}
         <a href="{{ entry.video_teaser }}" class="btn btn-sm z-depth-0" role="button" target="_blank">🎬 Teaser</a>
       {% endif %}
     </div>
-
-    <!-- Hidden Bibtex Drawer with explicit inline fallback display rule -->
-    {% if entry.bibtex_show %}
-      <div class="bibtex hidden" style="display: none;">
-        {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
-      </div>
-    {% endif %}
   </div>
 </div>
