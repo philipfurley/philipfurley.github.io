@@ -75,7 +75,7 @@
 
     <!-- Links/Buttons Bar (DOI -> PDF -> Full Video -> Teaser) -->
     <div class="links">
-      <!-- 1. Robust DOI Button (handles both raw DOIs and full URLs) -->
+      <!-- 1. DOI Button -->
       {% if entry.doi %}
         {% if entry.doi contains '://' %}
           <a href="{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" target="_blank">DOI</a>
