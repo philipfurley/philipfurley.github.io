@@ -1,26 +1,18 @@
 <div class="row">
-  {% if site.enable_publication_badges %}
-    {% assign entry_has_altmetric_badge = false %}
-    {% if entry.altmetric and entry.altmetric != blank and entry.altmetric != "false" %}
-      {% assign entry_has_altmetric_badge = true %}
+  <!-- Publication Type Badge (e.g., "chapter", "article") -->
+  <div class="col-sm-2 abbr">
+    {% if entry.abbr %}
+      {% if site.data.venues[entry.abbr] %}
+        <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+      {% else %}
+        <abbr class="badge">{{entry.abbr}}</abbr>
+      {% endif %}
+    {% elsif entry.type == "incollection" or entry.type == "inproceedings" %}
+      <abbr class="badge">chapter</abbr>
     {% endif %}
-    {% assign entry_has_dimensions_badge = false %}
-    {% if entry.dimensions and entry.dimensions != blank and entry.dimensions != "false" %}
-      {% assign entry_has_dimensions_badge = true %}
-    {% endif %}
-    {% if entry_has_altmetric_badge or entry_has_dimensions_badge %}
-      <div class="badges">
-        {% if entry_has_altmetric_badge %}
-          <span class="altmetric-embed" data-badge-type="2" data-badge-popover="right" {% if entry.altmetric contains 'isbndb' or entry.altmetric contains 'oclc' or entry.altmetric contains 'pmid' or entry.altmetric contains 'arxiv' %}data-{% if entry.altmetric contains 'isbndb' %}isbn{% elsif entry.altmetric contains 'oclc' %}oclc{% elsif entry.altmetric contains 'pmid' %}pmid{% elsif entry.altmetric contains 'arxiv' %}arxiv{% endif %}-id="{{ entry.altmetric }}"{% else %}data-doi="{{ entry.altmetric }}"{% endif %}></span>
-        {% endif %}
-        {% if entry_has_dimensions_badge %}
-          <span class="__dimensions_badge_embed__" {% if entry.dimensions contains 'isbndb' or entry.dimensions contains 'oclc' or entry.dimensions contains 'pmid' or entry.dimensions contains 'arxiv' %}data-{% if entry.dimensions contains 'isbndb' %}isbn{% elsif entry.dimensions contains 'oclc' %}oclc{% elsif entry.dimensions contains 'pmid' %}pmid{% elsif entry.dimensions contains 'arxiv' %}arxiv{% endif %}-id="{{ entry.dimensions }}"{% else %}data-doi="{{ entry.dimensions }}"{% endif %} data-hide-zero-citations="true" data-style="small_circle" data-legend="hover-right"></span>
-        {% endif %}
-      </div>
-    {% endif %}
-  {% endif %}
+  </div>
 
-  <div class="col-12">
+  <div class="col-sm-10">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -70,8 +62,10 @@
     <div class="periodical">
       {% if entry.type == "article" %}
         <em>{{ entry.journal }}</em>
-      {% elsif entry.type == "inproceedings" %}
+      {% elsif entry.type == "inproceedings" or entry.type == "incollection" %}
         <em>In {{ entry.booktitle }}</em>
+      {% elsif entry.type == "book" %}
+        <em>{{ entry.publisher }}</em>
       {% endif %}
       {% if entry.year %}
         , {{ entry.year }}
