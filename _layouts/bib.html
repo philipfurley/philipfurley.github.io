@@ -1,5 +1,5 @@
 <div class="row">
-  <!-- Publication Type Badge (e.g., "chapter", "article") -->
+  <!-- Publication Type Badge -->
   <div class="col-sm-2 abbr">
     {% if entry.abbr %}
       {% if site.data.venues[entry.abbr] %}
@@ -15,6 +15,7 @@
   <div class="col-sm-10">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
+    
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -72,14 +73,14 @@
       {% endif %}
     </div>
 
-    <!-- Links/Buttons Bar (Ordered: DOI -> Bib -> PDF -> Full Video -> Teaser) -->
+    <!-- Links/Buttons Bar -->
     <div class="links">
       <!-- 1. DOI Button -->
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" target="_blank">DOI</a>
       {% endif %}
 
-      <!-- 2. Bibtex Button -->
+      <!-- 2. Bibtex Button (Restored proper class and toggle triggers) -->
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
@@ -104,9 +105,9 @@
       {% endif %}
     </div>
 
-    <!-- Hidden Bibtex Drawer (collapsed by default) -->
+    <!-- Hidden Bibtex Drawer -->
     {% if entry.bibtex_show %}
-      <div class="bibtex-hidden" style="display: none;">
+      <div class="bibtex-hidden">
         {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
       </div>
     {% endif %}
