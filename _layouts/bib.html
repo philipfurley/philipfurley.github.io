@@ -80,7 +80,7 @@
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" target="_blank">DOI</a>
       {% endif %}
 
-      <!-- 2. Bibtex Button (Restored proper class and toggle triggers) -->
+      <!-- 2. Bibtex Button -->
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
@@ -105,9 +105,9 @@
       {% endif %}
     </div>
 
-    <!-- Hidden Bibtex Drawer -->
+    <!-- Hidden Bibtex Drawer (properly linked to al-folio's toggle script) -->
     {% if entry.bibtex_show %}
-      <div class="bibtex-hidden">
+      <div class="bibtex bibtex-hidden">
         {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
       </div>
     {% endif %}
