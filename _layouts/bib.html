@@ -73,18 +73,9 @@
       {% endif %}
     </div>
 
-    <!-- Links/Buttons Bar (DOI -> PDF -> Full Video -> Teaser) -->
+    <!-- Links/Buttons Bar (PDF -> Video -> Teaser) -->
     <div class="links">
-      <!-- 1. DOI Button -->
-      {% if entry.doi %}
-        {% if entry.doi contains '://' %}
-          <a href="{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" target="_blank">DOI</a>
-        {% else %}
-          <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" target="_blank">DOI</a>
-        {% endif %}
-      {% endif %}
-
-      <!-- 2. PDF Button -->
+      <!-- 1. PDF Button -->
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
           <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
@@ -93,12 +84,12 @@
         {% endif %}
       {% endif %}
 
-      <!-- 3. Full Video Button -->
+      <!-- 2. Video Button -->
       {% if entry.video_full %}
-        <a href="{{ entry.video_full }}" class="btn btn-sm z-depth-0" role="button" target="_blank">🎥 Full Video</a>
+        <a href="{{ entry.video_full }}" class="btn btn-sm z-depth-0" role="button" target="_blank">🎥 Video</a>
       {% endif %}
 
-      <!-- 4. Video Teaser Button -->
+      <!-- 3. Video Teaser Button -->
       {% if entry.video_teaser %}
         <a href="{{ entry.video_teaser }}" class="btn btn-sm z-depth-0" role="button" target="_blank">🎬 Teaser</a>
       {% endif %}
