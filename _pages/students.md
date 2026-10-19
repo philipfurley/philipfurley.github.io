@@ -267,7 +267,7 @@ html[data-theme='dark'] .students-lead-box p {
         </div>
         <div class="contact-detail-item">
           <i class="fa-solid fa-phone"></i>
-          <span>Phone: <a href="tel:+4922149824211">+49 (0)221 4982-4211</a></span>
+          <span>Phone: <a href="tel:+4922149824310">+49 (0)221 4982-4310</a></span>
         </div>
         <div class="contact-detail-item">
           <i class="fa-solid fa-building-columns"></i>
