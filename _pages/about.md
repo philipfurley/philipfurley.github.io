@@ -144,10 +144,11 @@ html[data-theme='dark'] .highlight-card p {
     <p>Psychology &amp; Sport Science</p>
   </div>
 </div>
+<div style="overflow: hidden;">
+  <p>My research program advances our understanding of human emotion, nonverbal expressions, visual attention, and cognitive functioning under high pressure. A cornerstone of my work is combining an <em>in situ</em> ethological approach in competitive sport with systematic experimental designs. Rather than relying solely on artificial laboratory paradigms that often fail to capture the intensity of real life, we start by observing human behavior where it naturally unfolds: in high-stakes athletic competition. Sport provides an unmatched, ecologically valid lens to study how people genuinely emote, communicate nonverbally, and make split-second decisions under pressure.</p>
 
-<p>My research program advances our understanding of human emotion, nonverbal expressions, visual attention, and cognitive functioning under high pressure. A cornerstone of this work is combining an <em>in situ</em> ethological approach in competitive sport with systematic experimental designs. Rather than relying solely on artificial laboratory paradigms, we begin by observing human behavior where it naturally unfolds—using high-stakes athletic competition as an ecologically valid lens to study how people emote, communicate, and decide under pressure.</p>
-
-<p>To move from observation to causal explanation, we translate these field insights directly into controlled laboratory and field experiments. By systematically manipulating key variables while preserving high stimulus fidelity, we isolate the cognitive and affective mechanisms driving real-world behavior—bridging basic psychological science and human performance.</p>
+  <p>To move from observation to causal explanation, we translate these field insights directly into controlled laboratory and field experiments. By systematically manipulating key variables while preserving high stimulus fidelity, we rigorously test the cognitive and affective mechanisms underlying real-world behavior. This synthesis of ethological richness and experimental precision bridges basic psychological science and applied human performance, revealing how individuals adapt, communicate, and excel when the stakes are highest.</p>
+</div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
