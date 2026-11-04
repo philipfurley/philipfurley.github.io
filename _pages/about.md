@@ -145,9 +145,9 @@ html[data-theme='dark'] .highlight-card p {
   </div>
 </div>
 
-<p>My research program advances our understanding of human emotion, nonverbal expressions, visual attention, and cognitive functioning under high pressure. A cornerstone of my work is the application of an <em>in situ</em> ethological approach within the rich, ecologically valid context of competitive sport.</p>
+<p>A cornerstone of my work is combining an in situ ethological approach in competitive sport with systematic experimental designs. Rather than relying solely on artificial laboratory paradigms that often fail to capture the intensity of real life, we start by observing human behavior where it naturally unfolds: in high-stakes athletic competition. Sport provides an unmatched, ecologically valid lens to study how people genuinely emote, communicate nonverbally, and make split-second decisions under pressure.</p>
 
-<p>By taking psychological inquiry out of artificial laboratory environments and examining high-stakes athletic scenarios, my lab leverages sports as a naturalistic lens to decode fundamental principles of human psychology, affective processes, nonverbal communication, and executive functioning. Ultimately, this research seeks to bridge the gap between basic cognitive-affective science and real-world human performance, offering novel insights into how individuals adapt, communicate, and excel when stakes are high.</p>
+<p>To move from observation to causal explanation, we translate these field insights directly into controlled laboratory and field experiments. By systematically manipulating key variables while preserving high stimulus fidelity, we rigorously test the cognitive and affective mechanisms underlying real-world behavior. This synthesis of ethological richness and experimental precision bridges basic psychological science and applied human performance, revealing how individuals adapt, communicate, and excel when the stakes are highest.</p>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
