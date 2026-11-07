@@ -18,11 +18,11 @@ social: false
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-/* Add generous breathing room around the right-hand profile & contact sidebar */
+/* Ensure profile column maintains neat spacing on desktop */
 @media (min-width: 576px) {
   .profile.float-right {
-    margin-left: 2.5rem !important;
-    margin-bottom: 1.75rem !important;
+    margin-left: 2.25rem !important;
+    margin-bottom: 1.5rem !important;
   }
 }
 
@@ -129,12 +129,25 @@ html[data-theme='dark'] .highlight-card p {
   color: var(--global-text-color, #222);
 }
 
-.bio-body p {
+/* Keeps the research paragraphs beside the sidebar cleanly aligned */
+.research-column-content p {
   line-height: 1.7;
   margin-bottom: 1.15rem;
 }
 
-.bio-body a {
+/* Clearfix for a clean, intentional full-width block below both columns */
+.full-width-section {
+  clear: both;
+  padding-top: 1.25rem;
+}
+
+.full-width-section p {
+  line-height: 1.7;
+  margin-bottom: 1.15rem;
+}
+
+.full-width-section a,
+.research-column-content a {
   color: var(--global-theme-color, #007bff);
   font-weight: 500;
   text-decoration: none;
@@ -142,7 +155,8 @@ html[data-theme='dark'] .highlight-card p {
   transition: border-color 0.15s ease-in-out;
 }
 
-.bio-body a:hover {
+.full-width-section a:hover,
+.research-column-content a:hover {
   border-bottom-color: var(--global-theme-color, #007bff);
 }
 </style>
@@ -170,12 +184,18 @@ html[data-theme='dark'] .highlight-card p {
   </div>
 </div>
 
-<div class="bio-body">
+<!-- Left column content: stays straight and never creates jagged dog-legs -->
+<div class="research-column-content">
   <p>My research program advances our understanding of human emotion, nonverbal expressions, visual attention, and cognitive functioning under high pressure. A cornerstone of my work is combining an <em>in situ</em> ethological approach in competitive sport with systematic experimental designs. Rather than relying solely on artificial laboratory paradigms that often fail to capture the intensity of real life, we start by observing human behavior where it naturally unfolds: in high-stakes athletic competition. Sport provides an unmatched, ecologically valid lens to study how people genuinely emote, communicate nonverbally, and make split-second decisions under pressure.</p>
 
-  <p>Crucially, naturalistic observation is only the starting point. To move from observation to causal explanation, we translate these field insights directly into tightly controlled laboratory and field experiments. By systematically manipulating key variables while preserving high stimulus fidelity, we rigorously test and isolate the cognitive, perceptual, and affective mechanisms underlying real-world behavior. This synthesis of ethological richness and experimental precision resolves the classic tension between internal and ecological validity, bridging basic psychological science and applied human performance.</p>
+  <p>Crucially, naturalistic observation is only the starting point. To move from observation to causal explanation, we translate these field insights directly into tightly controlled laboratory and field experiments. By systematically manipulating key variables while preserving high stimulus fidelity, we rigorously test and isolate the cognitive, perceptual, and affective mechanisms underlying real-world behavior.</p>
+</div>
 
-  <p>You can explore our core empirical themes and current projects on the <a href="{{ '/research/' | relative_url }}">Research</a> page, or browse our latest peer-reviewed articles under <a href="{{ '/publications/' | relative_url }}">Publications</a>. I am always excited to connect with motivated <a href="{{ '/students/' | relative_url }}">students</a> interested in bachelor's, master's, or PhD thesis supervision, as well as international researchers and industry partners looking to collaborate—please feel free to <a href="mailto:p.furley@dshs-koeln.de">reach out via email</a>.</p>
+<!-- Full-width wrap section: clears the entire right sidebar for a polished finish -->
+<div class="full-width-section">
+  <p>Through this two-stage empirical cycle—moving from ethological richness in the field to experimental precision in the lab—my research resolves the classic tension between internal and ecological validity. Ultimately, this work bridges basic psychological science and applied human performance, revealing how individuals adapt, communicate, and excel when the stakes are highest.</p>
+
+  <p>You can explore our core empirical themes and ongoing projects on the <a href="{{ '/research/' | relative_url }}">Research</a> page, or browse our latest peer-reviewed articles under <a href="{{ '/publications/' | relative_url }}">Publications</a>. I am always keen to connect with motivated <a href="{{ '/students/' | relative_url }}">students</a> interested in bachelor's, master's, or PhD thesis supervision, as well as international researchers and industry partners looking to collaborate—please feel free to <a href="mailto:p.furley@dshs-koeln.de">get in touch</a>.</p>
 </div>
 
 <script>
