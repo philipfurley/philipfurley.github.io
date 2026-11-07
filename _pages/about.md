@@ -18,7 +18,7 @@ social: false
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-/* Ensure profile column maintains neat spacing on desktop */
+/* Maintain neat spacing around the right-hand profile and contact sidebar */
 @media (min-width: 576px) {
   .profile.float-right {
     margin-left: 2.25rem !important;
@@ -129,13 +129,30 @@ html[data-theme='dark'] .highlight-card p {
   color: var(--global-text-color, #222);
 }
 
-/* Keeps the research paragraphs beside the sidebar cleanly aligned */
+/* Consistent inline link styling across bio and main body */
+.bio-lead a,
+.full-width-section a,
+.research-column-content a {
+  color: var(--global-theme-color, #007bff);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease-in-out;
+}
+
+.bio-lead a:hover,
+.full-width-section a:hover,
+.research-column-content a:hover {
+  border-bottom-color: var(--global-theme-color, #007bff);
+}
+
+/* Left column content: stays straight and avoids jagged line breaks */
 .research-column-content p {
   line-height: 1.7;
   margin-bottom: 1.15rem;
 }
 
-/* Clearfix for a clean, intentional full-width block below both columns */
+/* Clean full-width section below both columns */
 .full-width-section {
   clear: both;
   padding-top: 1.25rem;
@@ -145,24 +162,10 @@ html[data-theme='dark'] .highlight-card p {
   line-height: 1.7;
   margin-bottom: 1.15rem;
 }
-
-.full-width-section a,
-.research-column-content a {
-  color: var(--global-theme-color, #007bff);
-  font-weight: 500;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.15s ease-in-out;
-}
-
-.full-width-section a:hover,
-.research-column-content a:hover {
-  border-bottom-color: var(--global-theme-color, #007bff);
-}
 </style>
 
 <div class="bio-lead">
-  <p>I am a senior lecturer (PD Dr.) at the <strong>German Sport University Cologne</strong>, where I serve as Deputy Head of the <strong>Institute of Exercise Training and Sport Informatics</strong>. My work has been recognized with the highest honor in German sport science—the <strong>DOSB Science Award</strong>—and is supported by major competitive grants, including funding from the German Research Foundation (DFG).</p>
+  <p>I am a senior lecturer (PD Dr.) at the <a href="https://www.dshs-koeln.de/en/" target="_blank" rel="noopener noreferrer">German Sport University Cologne</a>, where I serve as Deputy Head of the <a href="https://www.dshs-koeln.de/en/institute-of-exercise-training-and-sport-informatics/" target="_blank" rel="noopener noreferrer">Institute of Exercise Training and Sport Informatics</a>. My work has been recognized with the highest honor in German sport science—the <strong>DOSB Science Award</strong>—and is supported by major competitive grants, including funding from the <a href="https://gepris.dfg.de/project/539562999/3" target="_blank" rel="noopener noreferrer">German Research Foundation (DFG)</a>.</p>
 </div>
 
 <div class="about-highlights">
@@ -184,7 +187,7 @@ html[data-theme='dark'] .highlight-card p {
   </div>
 </div>
 
-<!-- Left column content: stays straight and never creates jagged dog-legs -->
+<!-- Left column content: stays straight and aligns cleanly beside the sidebar -->
 <div class="research-column-content">
   <p>My research program advances our understanding of human emotion, nonverbal expressions, visual attention, and cognitive functioning under high pressure. A cornerstone of my work is combining an <em>in situ</em> ethological approach in competitive sport with systematic experimental designs. Rather than relying solely on artificial laboratory paradigms that often fail to capture the intensity of real life, we start by observing human behavior where it naturally unfolds: in high-stakes athletic competition. Sport provides an unmatched, ecologically valid lens to study how people genuinely emote, communicate nonverbally, and make split-second decisions under pressure.</p>
 
